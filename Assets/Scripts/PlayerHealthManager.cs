@@ -20,17 +20,14 @@ public class PlayerHealthManager : MonoBehaviour
             canTakeDamage = true;
         }
     }
-    /*private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Heart"))
+        if (other.CompareTag("Spring"))
         {
             if (lives >= maxLives) return;
-            lives += 1; // lives++;
-            _audioSource.PlayOneShot(pickupClips[
-                Random.Range(0,pickupClips.Length)]);
-            Destroy(other.gameObject);
+            lives += 1;
         }
-    }*/
+    }
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (canTakeDamage && col.gameObject.CompareTag("Enemy"))
