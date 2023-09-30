@@ -608,22 +608,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6774959634611317133, guid: 4826ea140d26e6749af4265db62655e4, type: 3}
-      propertyPath: m_Size.x
-      value: 0.296875
-      objectReference: {fileID: 0}
-    - target: {fileID: 6774959634611317133, guid: 4826ea140d26e6749af4265db62655e4, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8125
-      objectReference: {fileID: 0}
-    - target: {fileID: 6774959634611317133, guid: 4826ea140d26e6749af4265db62655e4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3559912632328187504, guid: 0820836f3ed788e4a91943c11d1a0aa1, type: 3}
-    - target: {fileID: 6774959634611317133, guid: 4826ea140d26e6749af4265db62655e4, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9035018832593123505, guid: 4826ea140d26e6749af4265db62655e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
