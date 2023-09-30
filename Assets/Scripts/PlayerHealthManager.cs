@@ -1,5 +1,5 @@
 using UnityEngine;
-using Random = UnityEngine.Random;
+using UnityEngine.UI;
 
 
 public class PlayerHealthManager : MonoBehaviour
@@ -13,11 +13,19 @@ public class PlayerHealthManager : MonoBehaviour
     public float canTakeDamageTime = 0.2f;
     public float canTakeDamageCounter;
 
+    [Header("HealthBar")] 
+    public Image[] leaves;
+
     private void Update()
     {
         if (Time.time > canTakeDamageCounter && !canTakeDamage)
         {
             canTakeDamage = true;
+        }
+
+        for (int i = 0; i < leaves.Length; i++)
+        {
+            leaves[i].color = i < lives ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
         }
     }
     private void OnTriggerStay2D(Collider2D other)
