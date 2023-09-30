@@ -1,70 +1,40 @@
-using System;
 using UnityEngine;
- 
+using UnityEngine.Serialization;
+
 public class PlayerMovement : MonoBehaviour
 {
-    //I recommend 7 for the move speed, and 1.2 for the force damping
-    private Rigidbody2D _rigidbody2D;
-    public float moveSpeed;
-    public Vector2 forceToApply;
-    public Vector2 PlayerInput;
-    public float forceDamping;
+    [Header("Movement")]
+    public float moveSpeed = 5f;
+    private Vector2 _desiredVelocity;
     
     [Header("Acceleration")]
     public float accelerationTime = 0.02f;
     public float groundFriction = 0.03f;
 
+    [Header("Components")]
+    private Rigidbody2D _rigidbody2D;
+    private InputManager _input;
+
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _input = GetComponent<InputManager>();
     }
 
-    void Update()
+    private void Update()
     {
-        PlayerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        _desiredVelocity = _rigidbody2D.velocity;
+        
+        _rigidbody2D.velocity = _desiredVelocity;
     }
-    void FixedUpdate()
-    {
-        Vector2 moveForce = PlayerInput * moveSpeed;
-        moveForce += forceToApply;
-        forceToApply /= forceDamping;
-        
-        if (Mathf.Abs(forceToApply.x) <= 0.01f && Mathf.Abs(forceToApply.y) <= 0.01f)
-        {
-            forceToApply = Vector2.zero;
-        }
-        _rigidbody2D.velocity = moveForce;
-        
-        if (PlayerInput.x != 0)
-        {
-            PlayerInput.x = Mathf.Lerp( _rigidbody2D.velocity.x,PlayerInput.x * moveSpeed, accelerationTime);
-        }
-        else
-        {
-            PlayerInput.x = Mathf.Lerp(PlayerInput.x, 0f, groundFriction);
-        }
-        
-        if (PlayerInput.y != 0)
-        {
-            PlayerInput.y = Mathf.Lerp(_rigidbody2D.velocity.y, PlayerInput.y * moveSpeed, accelerationTime);
-        }
-        else
-        {
-            PlayerInput.x = Mathf.Lerp(PlayerInput.x, 0f, groundFriction);
-        }
-        
-    }
- 
     
-}
-
-
-
-/*{
-
-
     private void FixedUpdate()
     {
+        if (_input.moveDirection.magnitude > 1)
+        {
+            _input.moveDirection.Normalize();
+        }
+
         if (_input.moveDirection.x != 0)
         {
             _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 
@@ -85,19 +55,7 @@ public class PlayerMovement : MonoBehaviour
             _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 0f, groundFriction);
         }
 
-        Vector2 moveForce = _input.moveDirection * moveSpeed;
-        moveForce += forceToApply;
-        forceToApply /= forceDamping;
-        if (Mathf.Abs(forceToApply.x) <= 0.01f && Mathf.Abs(forceToApply.y) <= 0.01f)
-        {
-            forceToApply = Vector2.zero;
-        }
-
-        _rigidbody2D.velocity = moveForce;
-        
-        
-
         _rigidbody2D.velocity = _desiredVelocity;
     }
-}*/
+}
 
