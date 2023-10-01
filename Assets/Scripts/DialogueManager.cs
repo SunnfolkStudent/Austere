@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-/*
+
 public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+   /* public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
 
@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
-    }
+    }*/
 
     public void DisplayNextSentence()
     {
@@ -62,4 +62,3 @@ public class DialogueManager : MonoBehaviour
     }
 
 }
-*/
