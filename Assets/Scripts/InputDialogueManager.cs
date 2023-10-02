@@ -82,7 +82,7 @@ public class InputDialogueManager : MonoBehaviour
     {
         textInput = inputField.GetComponent<Text>().text;
         
-        if (_inputManager.answerPressed && textInput.Contains(answer) == true)
+        if (_inputManager.answerPressed && textInput.Contains(answer))
         { 
                EndDialogue();
                //drop key
