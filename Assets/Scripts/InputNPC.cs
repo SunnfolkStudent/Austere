@@ -8,6 +8,6 @@ public class InputNPC : MonoBehaviour
 
     public void TriggerDialogue ()
     {
-        FindFirstObjectByType<InputDialogueManager>().StartDialogue(dialogue);
+        //FindFirstObjectByType<InputDialogueManager>().StartDialogue(dialogue);
     }
 }
