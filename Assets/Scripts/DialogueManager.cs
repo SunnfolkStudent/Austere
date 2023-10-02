@@ -6,8 +6,8 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TextMeshPro nameText;
-    public TextMeshPro dialogueText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI dialogueText;
 
     public Animator animator;
     
