@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,4 +6,19 @@ using UnityEngine;
 public class KarmaManager : MonoBehaviour
 {
     public int karmaLevel;
+
+    private void Start()
+    {
+        karmaLevel = PlayerPrefs.GetInt("Karma");
+    }
+
+    private void Update()
+    {
+        PlayerPrefs.SetInt("Karma", karmaLevel);
+    }
+
+    void AddKarma()
+    {
+        karmaLevel--;
+    }
 }

@@ -57,8 +57,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private void DoorUnlock()
     {
-        //animate door opening, lock player movement?
-        
+        //Animator.SetBool("Open", true);
+
         //door becomes available to go through
     }
 }

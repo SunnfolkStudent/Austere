@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,8 +17,15 @@ public class PlayerHealthManager : MonoBehaviour
     [Header("HealthBar")] 
     public Image[] leaves;
 
+    private void Start()
+    {
+        lives = PlayerPrefs.GetInt("Lives");
+    }
+
     private void Update()
     {
+        PlayerPrefs.SetInt("Lives", lives);
+        
         if (Time.time > canTakeDamageCounter && !canTakeDamage)
         {
             canTakeDamage = true;
