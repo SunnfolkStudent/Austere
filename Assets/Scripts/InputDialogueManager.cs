@@ -41,6 +41,8 @@ public class InputDialogueManager : MonoBehaviour
 
         sentences.Clear();
 
+        theAnswer = inputField.GetComponent<Text>().text;
+
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -80,15 +82,10 @@ public class InputDialogueManager : MonoBehaviour
 
     void AnswerCheck()
     {
-        if (_inputManager.answerPressed)
+        if (_inputManager.answerPressed && theAnswer.Contains("hone") == true)
         { 
-            theAnswer = inputField.GetComponent<Text>().text;
-            
-            if (theAnswer.Contains("hone") == true)
-            { 
                EndDialogue();
                //drop key
-            }
         }
         
     }
