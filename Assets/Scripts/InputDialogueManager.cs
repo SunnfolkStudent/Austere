@@ -12,7 +12,7 @@ public class InputDialogueManager : MonoBehaviour
 
     private string textInput;
     public GameObject inputField;
-    public string answer = "hone";
+    public string answer = "phone";
 
     public Animator animator;
     
@@ -46,7 +46,6 @@ public class InputDialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-
         DisplayNextSentence();
     }
 
@@ -54,12 +53,12 @@ public class InputDialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            AnswerCheck();
             return;
         }
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
-        AnswerCheck();
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -80,9 +79,9 @@ public class InputDialogueManager : MonoBehaviour
 
     public void AnswerCheck()
     {
-        textInput = inputField.GetComponent<TextMeshProUGUI>().text;
+        textInput = inputField.GetComponent<TMP_Text>().text;
         
-        if (_inputManager.enterPressed && textInput.Contains(answer))
+        if (textInput.Contains(answer))
         { 
                EndDialogue();
                //drop key
