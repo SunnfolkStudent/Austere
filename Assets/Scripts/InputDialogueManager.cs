@@ -23,6 +23,7 @@ public class InputDialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         _inputManager = GetComponent<InputManager>();
+        inputField.SetActive(true);
     }
 
     private void Update()
@@ -56,9 +57,7 @@ public class InputDialogueManager : MonoBehaviour
         if (sentences.Count == 0)
         {
             AnswerCheck();
-            return;
         }
-
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -80,11 +79,12 @@ public class InputDialogueManager : MonoBehaviour
         inputField.SetActive(false);
     }
 
-    void AnswerCheck()
+    public void AnswerCheck()
     {
         if (_inputManager.answerPressed && theAnswer.Contains("hone") == true)
         { 
                EndDialogue();
+               return;
                //drop key
         }
         
