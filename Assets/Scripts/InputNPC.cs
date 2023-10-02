@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class InputNPC : MonoBehaviour
 {
-    public InputDialogue dialogue;
+    public Dialogue dialogue;
 
     public void TriggerDialogue ()
     {
-        //FindFirstObjectByType<InputDialogueManager>().StartDialogue(dialogue);
+        FindFirstObjectByType<InputDialogueManager>().StartDialogue(dialogue);
     }
 }
