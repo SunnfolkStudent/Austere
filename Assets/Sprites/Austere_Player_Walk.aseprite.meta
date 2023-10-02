@@ -1,0 +1,472 @@
+fileFormatVersion: 2
+guid: b7b4f4f731ee1164cbecc31cf93a9cc8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Austere_Player_Walk_Frame_0
+    originalName: 
+    pivot: {x: 0.5666667, y: -0.15686275}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 4
+      width: 30
+      height: 51
+    spriteID: dd52304674342dc498f496fba5ed6e61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 4}
+  - name: Austere_Player_Walk_Frame_1
+    originalName: 
+    pivot: {x: 0.62068963, y: -0.13461539}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 63
+      width: 29
+      height: 52
+    spriteID: f4fdfd6bbeaf3d641a3840780c9f141a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 63}
+  - name: Austere_Player_Walk_Frame_2
+    originalName: 
+    pivot: {x: 0.6296296, y: -0.094339624}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 4
+      width: 27
+      height: 53
+    spriteID: 2828a5a9d03e76742be4abd0ab0ed8a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 4}
+  - name: Austere_Player_Walk_Frame_3
+    originalName: 
+    pivot: {x: 0.6666667, y: -0.074074075}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 124
+      width: 24
+      height: 54
+    spriteID: d2aed80a9d8bf6449a217ab9626c3f9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 124}
+  - name: Austere_Player_Walk_Frame_4
+    originalName: 
+    pivot: {x: 0.62068963, y: -0.11538462}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 123
+      width: 29
+      height: 52
+    spriteID: deb8bfe8b0bb9b74dae65855212348eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 123}
+  - name: Austere_Player_Walk_Frame_5
+    originalName: 
+    pivot: {x: 0.54838705, y: -0.15686275}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 125
+      width: 31
+      height: 51
+    spriteID: 682a7ec5ef0f1034d9118d465b54da2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 125}
+  - name: Austere_Player_Walk_Frame_6
+    originalName: 
+    pivot: {x: 0.4666667, y: -0.11320755}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 64
+      width: 30
+      height: 53
+    spriteID: fcd03a86e8d578b4d9e3c0516d2ecdad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 64}
+  - name: Austere_Player_Walk_Frame_7
+    originalName: 
+    pivot: {x: 0.42857146, y: -0.094339624}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 183
+      width: 28
+      height: 53
+    spriteID: c33f85faa3c26e147abfbf07274ee83b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 183}
+  - name: Austere_Player_Walk_Frame_8
+    originalName: 
+    pivot: {x: 0.375, y: -0.094339624}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 186
+      width: 24
+      height: 53
+    spriteID: 29fe2d9bbf1191f48aaeccd7019d2004
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 186}
+  - name: Austere_Player_Walk_Frame_9
+    originalName: 
+    pivot: {x: 0.4137931, y: -0.094339624}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 184
+      width: 29
+      height: 53
+    spriteID: a491786f7db026d4a948a5d1ccedc635
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 184}
+  - name: Austere_Player_Walk_Frame_10
+    originalName: 
+    pivot: {x: 0.46875, y: -0.13461539}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 32
+      height: 52
+    spriteID: 8fe1b8ba175d1774b96a460bb8b8cac3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Austere_Player_Walk_Frame_11
+    originalName: 
+    pivot: {x: 0.5185185, y: -0.15686275}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 65
+      width: 27
+      height: 51
+    spriteID: beb25365eb687ba439b74639e7598082
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 65}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 991422803
+    name: Austere_Player_Walk
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Austere_Player_Walk_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 15
+        y: 8
+        width: 30
+        height: 51
+      spriteId: dd52304674342dc498f496fba5ed6e61
+    - name: Austere_Player_Walk_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 14
+        y: 7
+        width: 29
+        height: 52
+      spriteId: f4fdfd6bbeaf3d641a3840780c9f141a
+    - name: Austere_Player_Walk_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 15
+        y: 5
+        width: 27
+        height: 53
+      spriteId: 2828a5a9d03e76742be4abd0ab0ed8a0
+    - name: Austere_Player_Walk_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 16
+        y: 4
+        width: 24
+        height: 54
+      spriteId: d2aed80a9d8bf6449a217ab9626c3f9d
+    - name: Austere_Player_Walk_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 14
+        y: 6
+        width: 29
+        height: 52
+      spriteId: deb8bfe8b0bb9b74dae65855212348eb
+    - name: Austere_Player_Walk_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 15
+        y: 8
+        width: 31
+        height: 51
+      spriteId: 682a7ec5ef0f1034d9118d465b54da2a
+    - name: Austere_Player_Walk_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 18
+        y: 6
+        width: 30
+        height: 53
+      spriteId: fcd03a86e8d578b4d9e3c0516d2ecdad
+    - name: Austere_Player_Walk_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 20
+        y: 5
+        width: 28
+        height: 53
+      spriteId: c33f85faa3c26e147abfbf07274ee83b
+    - name: Austere_Player_Walk_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 23
+        y: 5
+        width: 24
+        height: 53
+      spriteId: 29fe2d9bbf1191f48aaeccd7019d2004
+    - name: Austere_Player_Walk_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 20
+        y: 5
+        width: 29
+        height: 53
+      spriteId: a491786f7db026d4a948a5d1ccedc635
+    - name: Austere_Player_Walk_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 17
+        y: 7
+        width: 32
+        height: 52
+      spriteId: 8fe1b8ba175d1774b96a460bb8b8cac3
+    - name: Austere_Player_Walk_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 18
+        y: 8
+        width: 27
+        height: 51
+      spriteId: beb25365eb687ba439b74639e7598082
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}
