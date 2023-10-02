@@ -10,8 +10,9 @@ public class InputDialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
-    private string theAnswer;
+    private string textInput;
     public GameObject inputField;
+    public string answer = "hone";
 
     public Animator animator;
     
@@ -79,9 +80,9 @@ public class InputDialogueManager : MonoBehaviour
 
     public void AnswerCheck()
     {
-        theAnswer = inputField.GetComponent<Text>().text;
+        textInput = inputField.GetComponent<Text>().text;
         
-        if (_inputManager.answerPressed && theAnswer.Contains("hone") == true)
+        if (_inputManager.answerPressed && textInput.Contains(answer) == true)
         { 
                EndDialogue();
                //drop key
