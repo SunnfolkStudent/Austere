@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,9 @@ public class InputDialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public Button exitButton;
 
-    public string theAnswer;
+    private string theAnswer;
     public GameObject inputField;
 
     public Animator animator;
@@ -21,6 +23,14 @@ public class InputDialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         _inputManager = GetComponent<InputManager>();
+    }
+
+    private void Update()
+    {
+        if (_inputManager.escPressed)
+        {
+            EndDialogue();
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -62,7 +72,7 @@ public class InputDialogueManager : MonoBehaviour
         }
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
         inputField.SetActive(false);
@@ -74,7 +84,7 @@ public class InputDialogueManager : MonoBehaviour
         { 
             theAnswer = inputField.GetComponent<Text>().text;
             
-            if (theAnswer.Contains("phone") == true)
+            if (theAnswer.Contains("hone") == true)
             { 
                EndDialogue();
                //drop key
