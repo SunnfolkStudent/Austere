@@ -80,9 +80,9 @@ public class InputDialogueManager : MonoBehaviour
 
     public void AnswerCheck()
     {
-        textInput = inputField.GetComponent<Text>().text;
+        textInput = inputField.GetComponent<TextMeshProUGUI>().text;
         
-        if (_inputManager.answerPressed && textInput.Contains(answer))
+        if (_inputManager.enterPressed && textInput.Contains(answer))
         { 
                EndDialogue();
                //drop key
