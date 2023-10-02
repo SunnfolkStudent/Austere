@@ -316,7 +316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40.2, y: -28}
+  m_AnchoredPosition: {x: 36.1, y: -28}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81063611
@@ -630,7 +630,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 426606922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 426606924}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &426606922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,8 +694,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 
-    sentences: []
+    name: Devil
+    sentences:
+    - I am the Devil!
+    - No, not that devil.
+    - I am the Atheist Devil
 --- !u!1 &776779027
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,7 +836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.5, y: -10.219}
+  m_AnchoredPosition: {x: -22.9, y: -10.219}
   m_SizeDelta: {x: 495.6283, y: 79.5628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &806524519
@@ -955,7 +970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.2, y: 25.601}
+  m_AnchoredPosition: {x: -18.9, y: 25.601}
   m_SizeDelta: {x: 602.0544, y: 48.798}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879135767
@@ -1202,6 +1217,7 @@ GameObject:
   - component: {fileID: 1992777432}
   - component: {fileID: 1992777434}
   - component: {fileID: 1992777433}
+  - component: {fileID: 1992777435}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -1251,7 +1267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -4540944845975641770, guid: 287f1dd40c416084aa91c3107ba2a014, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1269,6 +1285,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992777431}
   m_CullTransparentMesh: 1
+--- !u!95 &1992777435
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992777431}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f62abc67bffa2e44a86506198560f74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2053830956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,9 +1351,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1314ade217cee741987d2acf6073c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  animator: {fileID: 0}
+  nameText: {fileID: 879135767}
+  dialogueText: {fileID: 806524519}
+  animator: {fileID: 1992777435}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
