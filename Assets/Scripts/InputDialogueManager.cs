@@ -9,7 +9,6 @@ public class InputDialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
-    public Button exitButton;
 
     private string theAnswer;
     public GameObject inputField;
@@ -42,12 +41,12 @@ public class InputDialogueManager : MonoBehaviour
 
         sentences.Clear();
 
-        theAnswer = inputField.GetComponent<Text>().text;
-
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
+        
+        theAnswer = inputField.GetComponent<Text>().text;
 
         DisplayNextSentence();
     }
@@ -56,11 +55,12 @@ public class InputDialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            AnswerCheck();
+            return;
         }
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        AnswerCheck();
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -84,7 +84,6 @@ public class InputDialogueManager : MonoBehaviour
         if (_inputManager.answerPressed && theAnswer.Contains("hone") == true)
         { 
                EndDialogue();
-               return;
                //drop key
         }
         
