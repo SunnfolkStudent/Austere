@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 771356909727800537}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,6 +170,8 @@ MonoBehaviour:
   interactPressed: 0
   interactReleased: 0
   interactHeld: 0
+  enterPressed: 0
+  escPressed: 0
   usingGamepad: 0
   usingDpad: 0
 --- !u!114 &3975029827514200526
@@ -204,3 +206,4 @@ MonoBehaviour:
   canTakeDamage: 0
   canTakeDamageTime: 0.2
   canTakeDamageCounter: 0
+  leaves: []
