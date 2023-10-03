@@ -46,13 +46,13 @@ public class PlayerMovement : MonoBehaviour
                     moveSpeed * _input.moveDirection.x, accelerationTime);
                 _anim.Play("Player_SideWalk");
                 
-                if (_rigidbody2D.velocity.x < 0.01f)
-                {
-                    gameObject.transform.localScale = new Vector3(-1, 1, 1);
-                }
-                else
+                if (_rigidbody2D.velocity.x < 0f)
                 {
                     gameObject.transform.localScale = new Vector3(1, 1, 1);
+                }
+                if (_rigidbody2D.velocity.x > 0f)
+                {
+                    gameObject.transform.localScale = new Vector3(-1, 1, 1);
                 }
             }
             else
