@@ -596,6 +596,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306032584}
   m_CullTransparentMesh: 1
+--- !u!1 &482160499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4356931913774173108, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+  m_PrefabInstance: {fileID: 761761667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &496672287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1388,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_AddedComponents: []
 =======
@@ -1391,15 +1397,25 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 761761683}
 >>>>>>> Stashed changes
+=======
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4356931913774173108, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 761761675}
+>>>>>>> parent of 9d82a5e (player animator fix part 5ish)
   m_SourcePrefab: {fileID: 100100000, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
 --- !u!4 &761761668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4498122453510900642, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
   m_PrefabInstance: {fileID: 761761667}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!95 &761761683
+=======
+--- !u!95 &761761675
+>>>>>>> parent of 9d82a5e (player animator fix part 5ish)
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -1409,7 +1425,11 @@ Animator:
   m_GameObject: {fileID: 482160499}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 056a74db531753f409475fb139399e2f, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: 20bc6572efaa2bf41b4dafd3b032632a, type: 2}
+>>>>>>> parent of 9d82a5e (player animator fix part 5ish)
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1421,7 +1441,10 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 9d82a5e (player animator fix part 5ish)
 --- !u!1 &921656214
 GameObject:
   m_ObjectHideFlags: 0

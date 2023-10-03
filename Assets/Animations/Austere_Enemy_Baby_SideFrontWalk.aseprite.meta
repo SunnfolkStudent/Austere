@@ -75,7 +75,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -87,7 +87,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638319472331085412
+  platformSettingsDirtyTick: 638319493641856693
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Austere_Enemy_Baby_SideFrontWalk_Frame_0
     originalName: 
-    pivot: {x: 0.43548387, y: -0.21276595}
+    pivot: {x: 0.43548387, y: 0.46808508}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 59}
   - name: Austere_Enemy_Baby_SideFrontWalk_Frame_1
     originalName: 
-    pivot: {x: 0.43076926, y: -0.21739131}
+    pivot: {x: 0.43076926, y: 0.47826087}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 81, y: 4}
   - name: Austere_Enemy_Baby_SideFrontWalk_Frame_2
     originalName: 
-    pivot: {x: 0.45312497, y: -0.21739131}
+    pivot: {x: 0.45312497, y: 0.47826087}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 154, y: 4}
   - name: Austere_Enemy_Baby_SideFrontWalk_Frame_3
     originalName: 
-    pivot: {x: 0.47826087, y: -0.21276595}
+    pivot: {x: 0.47826087, y: 0.46808508}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Austere_Enemy_Baby_SideFrontWalk_Frame_4
     originalName: 
-    pivot: {x: 0.43548387, y: -0.21276595}
+    pivot: {x: 0.43548387, y: 0.46808508}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -221,7 +221,7 @@ ScriptedImporter:
     uvTransform: {x: 74, y: 59}
   - name: Austere_Enemy_Baby_SideFrontWalk_Frame_5
     originalName: 
-    pivot: {x: 0.41666672, y: -0.21276595}
+    pivot: {x: 0.41666672, y: 0.46808508}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
