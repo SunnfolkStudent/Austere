@@ -75,7 +75,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -87,7 +87,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638319547131391372
+  platformSettingsDirtyTick: 638319553585189995
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Austere_Player__SideWalk_Frame_0
     originalName: 
-    pivot: {x: 0.52380955, y: -0.13725491}
+    pivot: {x: 0.52380955, y: 0.4901961}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 36, y: 4}
   - name: Austere_Player__SideWalk_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.13725491}
+    pivot: {x: 0.5, y: 0.4901961}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 62}
   - name: Austere_Player__SideWalk_Frame_2
     originalName: 
-    pivot: {x: 0.4166667, y: -0.14}
+    pivot: {x: 0.4166667, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Austere_Player__SideWalk_Frame_3
     originalName: 
-    pivot: {x: 0.42857143, y: -0.14}
+    pivot: {x: 0.42857143, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 36, y: 63}
   - name: Austere_Player__SideWalk_Frame_4
     originalName: 
-    pivot: {x: 0.47368422, y: -0.14}
+    pivot: {x: 0.47368422, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -221,7 +221,7 @@ ScriptedImporter:
     uvTransform: {x: 65, y: 4}
   - name: Austere_Player__SideWalk_Frame_5
     originalName: 
-    pivot: {x: 0.5263158, y: -0.13725491}
+    pivot: {x: 0.5263158, y: 0.4901961}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -241,7 +241,7 @@ ScriptedImporter:
     uvTransform: {x: 36, y: 179}
   - name: Austere_Player__SideWalk_Frame_6
     originalName: 
-    pivot: {x: 0.52380955, y: -0.16}
+    pivot: {x: 0.52380955, y: 0.48}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -261,7 +261,7 @@ ScriptedImporter:
     uvTransform: {x: 36, y: 121}
   - name: Austere_Player__SideWalk_Frame_7
     originalName: 
-    pivot: {x: 0.54545456, y: -0.1632653}
+    pivot: {x: 0.54545456, y: 0.48979592}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -281,7 +281,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 121}
   - name: Austere_Player__SideWalk_Frame_8
     originalName: 
-    pivot: {x: 0.54545456, y: -0.1632653}
+    pivot: {x: 0.54545456, y: 0.48979592}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -301,7 +301,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 178}
   - name: Austere_Player__SideWalk_Frame_9
     originalName: 
-    pivot: {x: 0.6315789, y: -0.14}
+    pivot: {x: 0.6315789, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
