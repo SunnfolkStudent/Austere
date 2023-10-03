@@ -46,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
                     moveSpeed * _input.moveDirection.x, accelerationTime);
                 _anim.SetBool("isWalking", true);
                 _anim.SetBool("sideWalk", true);
+                _anim.SetBool("upWalk", false);
+                _anim.SetBool("downWalk", false);
             }
             else
             {
@@ -60,10 +62,12 @@ public class PlayerMovement : MonoBehaviour
                 if (_rigidbody2D.velocity.y > 0.01f)
                 {
                     _anim.SetBool("upWalk", true);
+                    _anim.SetBool("sideWalk", false);
                 }
                 else
                 {
                     _anim.SetBool("downWalk", true);
+                    _anim.SetBool("sideWalk", false);
                 }
             }
             else
@@ -80,8 +84,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
             _rigidbody2D.velocity = _desiredVelocity;
-            var transform1 = transform;
-            transform1.localScale = new Vector3(_input.moveDirection.x, 1, 1);
+            transform.localScale = new Vector3(_input.moveDirection.x, 1, 1);
         }
     }
 }
