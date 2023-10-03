@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteraction : MonoBehaviour
 {
     public bool haveKey;
     public TextMeshPro interactHelp;
     public GameObject helpText;
-    public GameObject exit;
+    public int sceneBuildIndex;
 
     private InputManager _input;
 
@@ -19,7 +20,6 @@ public class PlayerInteraction : MonoBehaviour
         _input = GetComponent<InputManager>();
         interactHelp.gameObject.SetActive(false);
         haveKey = false;
-        exit.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -28,18 +28,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             haveKey = true;
             Destroy(other.gameObject);
-        }
-
-        if (other.CompareTag("Door") && _input.interactPressed)
-        {
-            if (haveKey == true)
-            {
-                DoorUnlock();
-            }
-            else
-            {
-                return;
-            }
         }
         
         if (other.CompareTag("HelpText"))
@@ -50,15 +38,18 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Exit" && haveKey == true)
+        {
+            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+        }
+    }
+
 
     private void DestroyObjectDelayed()
     {
         Destroy(interactHelp, 10);
         Destroy(helpText, 10);
-    }
-
-    private void DoorUnlock()
-    {
-        exit.gameObject.SetActive(true);
     }
 }
