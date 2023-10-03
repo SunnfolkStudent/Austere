@@ -39,7 +39,7 @@ public class NPC : MonoBehaviour
       if (currentHealth <= 0)
       {
          Destroy(gameObject);
-         
+         _karma.karmaLevel -= 3;
       }
    }
 }

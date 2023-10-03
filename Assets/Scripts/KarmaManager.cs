@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class KarmaManager : MonoBehaviour
 {
-    public int karmaLevel;
+    public int karmaLevel = 0;
 
     private void Start()
     {

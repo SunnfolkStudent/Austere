@@ -8,7 +8,17 @@ public class EnemyPatrol : MonoBehaviour
     public GameObject player;
     public float speed;
 
+    public int maxHealth = 3;
+    public int currentHealth;
+
     private float distance;
+    private KarmaManager _karma;
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        _karma = GetComponent<KarmaManager>();
+    }
 
     private void Update()
     {
@@ -22,5 +32,22 @@ public class EnemyPatrol : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        //knockback
+
+        if (currentHealth <= 0)
+        {
+            Die();
+            _karma.karmaLevel -= 1;
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
