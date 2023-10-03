@@ -23,7 +23,6 @@ public class InputDialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         _inputManager = GetComponent<InputManager>();
-        inputField.SetActive(true);
     }
 
     private void Update()
@@ -37,6 +36,7 @@ public class InputDialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
+        inputField.SetActive(true);
 
         nameText.text = dialogue.name;
 

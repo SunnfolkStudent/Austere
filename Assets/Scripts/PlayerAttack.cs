@@ -37,4 +37,12 @@ public class PlayerAttack : MonoBehaviour
             Debug.Log("Hit!");
         }
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+            return;
+        
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
 }

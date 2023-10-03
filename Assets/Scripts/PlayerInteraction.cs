@@ -8,7 +8,6 @@ public class PlayerInteraction : MonoBehaviour
 {
     public bool haveKey;
     public TextMeshPro interactHelp;
-    public float delay = 10f;
     public GameObject helpText;
 
     private InputManager _input;
