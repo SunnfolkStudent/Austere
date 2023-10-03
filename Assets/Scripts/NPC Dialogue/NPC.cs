@@ -14,9 +14,9 @@ public class NPC : MonoBehaviour
       _input = GetComponent<InputManager>();
    }
 
-   private void OnCollisionEnter2D(Collision2D collision)
+   private void OnTriggerStay2D(Collider2D other)
    {
-      if (collision.gameObject.tag == "Player" && _input.interactPressed)
+      if (other.CompareTag("Player") && _input.interactPressed)
       {
          TriggerDialogue();
       }
