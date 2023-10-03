@@ -44,24 +44,39 @@ public class PlayerMovement : MonoBehaviour
             {
                 _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x,
                     moveSpeed * _input.moveDirection.x, accelerationTime);
-                _anim.Play("Player_SideWalk");
+                _anim.SetBool("isWalking", true);
+                _anim.SetBool("sideWalk", true);
             }
             else
             {
                 _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 0f, groundFriction);
-                _anim.Play("Player_Idle");
             }
 
-            if (_input.moveDirection.y != 0)
+            if (_input.moveDirection.y != 0f)
             {
                 _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y,
                     moveSpeed * _input.moveDirection.y, accelerationTime);
-                _anim.Play("Player_UpWalk");
+                _anim.SetBool("isWalking", true);
+                if (_rigidbody2D.velocity.y > 0.01f)
+                {
+                    _anim.SetBool("upWalk", true);
+                }
+                else
+                {
+                    _anim.SetBool("downWalk", true);
+                }
             }
             else
             {
                 _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 0f, groundFriction);
-                _anim.Play("Player_Idle");
+            }
+
+            if (_input.moveDirection.x == 0f && _input.moveDirection.y == 0f)
+            {
+                _anim.SetBool("isWalking", false);
+                _anim.SetBool("sideWalk", false);
+                _anim.SetBool("downWalk", false);
+                _anim.SetBool("upWalk", false);
             }
 
             _rigidbody2D.velocity = _desiredVelocity;
