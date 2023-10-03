@@ -19,6 +19,7 @@ public class InputNPC : MonoBehaviour
         if (other.CompareTag("Player") && _input.interactHeld)
         {
             TriggerDialogue();
+            Debug.Log("MirrorInteract");
         }
     }
 
