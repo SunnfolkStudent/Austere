@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 33cd492fba87cc44fa7775bd325898af
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: heal_well_Frame_0
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 93
+      height: 149
+    spriteID: 0573e1a44a8d13148974e62e7bee5e66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: heal_well_Frame_1
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 161
+      width: 93
+      height: 149
+    spriteID: 3804356c3a7c30b439bd80800432eae5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 161}
+  - name: heal_well_Frame_2
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 318
+      width: 93
+      height: 149
+    spriteID: a6468131094c6f543a10f764f388ab1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 318}
+  - name: heal_well_Frame_3
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 4
+      width: 93
+      height: 149
+    spriteID: 42cdab9e00be1ad41bd7b35979ae34de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 4}
+  - name: heal_well_Frame_4
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 161
+      width: 93
+      height: 149
+    spriteID: cf5428d4962553d4bbf4915c002ebe81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 161}
+  - name: heal_well_Frame_5
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 318
+      width: 93
+      height: 149
+    spriteID: 14f4efbfccc3dae4a9a014352cdfbd47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 318}
+  - name: heal_well_Frame_6
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 4
+      width: 93
+      height: 149
+    spriteID: 97df9beef9814be439f51444258bc27f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 4}
+  - name: heal_well_Frame_7
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 161
+      width: 93
+      height: 149
+    spriteID: ab6b88200d2a1fd46990159e0963e2fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 161}
+  - name: heal_well_Frame_8
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 318
+      width: 93
+      height: 149
+    spriteID: 9ba711661bb43a24c94c8f2d89ed5dce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 318}
+  - name: heal_well_Frame_9
+    originalName: 
+    pivot: {x: 0.48387098, y: -0.26174498}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 307
+      y: 4
+      width: 93
+      height: 149
+    spriteID: 979787e5b6affc946948e9fcb9d5a1c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 307, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1512410473
+    name: heal_well
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: heal_well_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: 0573e1a44a8d13148974e62e7bee5e66
+    - name: heal_well_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: 3804356c3a7c30b439bd80800432eae5
+    - name: heal_well_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: a6468131094c6f543a10f764f388ab1e
+    - name: heal_well_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: 42cdab9e00be1ad41bd7b35979ae34de
+    - name: heal_well_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: cf5428d4962553d4bbf4915c002ebe81
+    - name: heal_well_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: 14f4efbfccc3dae4a9a014352cdfbd47
+    - name: heal_well_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: 97df9beef9814be439f51444258bc27f
+    - name: heal_well_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: ab6b88200d2a1fd46990159e0963e2fe
+    - name: heal_well_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: 9ba711661bb43a24c94c8f2d89ed5dce
+    - name: heal_well_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 55
+        y: 39
+        width: 93
+        height: 149
+      spriteId: 979787e5b6affc946948e9fcb9d5a1c5
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 200, y: 215}
