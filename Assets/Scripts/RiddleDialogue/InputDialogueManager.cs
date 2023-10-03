@@ -14,11 +14,13 @@ public class InputDialogueManager : MonoBehaviour
     public GameObject inputField;
     public string answer = "phone";
 
+    public static bool playerControlsDisabled = false;
+
     public Animator animator;
     
     private Queue<string> sentences;
     private InputManager _inputManager;
-    
+        
     void Start()
     {
         sentences = new Queue<string>();
@@ -37,6 +39,7 @@ public class InputDialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", true);
         inputField.SetActive(true);
+        playerControlsDisabled = true;
 
         nameText.text = dialogue.name;
 
@@ -75,6 +78,7 @@ public class InputDialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         inputField.SetActive(false);
+        playerControlsDisabled = false;
     }
 
     public void AnswerCheck()

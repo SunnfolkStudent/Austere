@@ -30,32 +30,37 @@ public class PlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (_input.moveDirection.magnitude > 1)
+        if (InputDialogueManager.playerControlsDisabled == false)
         {
-            _input.moveDirection.Normalize();
-        }
 
-        if (_input.moveDirection.x != 0)
-        {
-            _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 
-                moveSpeed * _input.moveDirection.x, accelerationTime);
-        }
-        else
-        {
-            _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 0f, groundFriction);
-        }
-        
-        if (_input.moveDirection.y != 0)
-        {
-            _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 
-                moveSpeed * _input.moveDirection.y, accelerationTime);
-        }
-        else
-        {
-            _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 0f, groundFriction);
-        }
 
-        _rigidbody2D.velocity = _desiredVelocity;
+            if (_input.moveDirection.magnitude > 1)
+            {
+                _input.moveDirection.Normalize();
+            }
+
+            if (_input.moveDirection.x != 0)
+            {
+                _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x,
+                    moveSpeed * _input.moveDirection.x, accelerationTime);
+            }
+            else
+            {
+                _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 0f, groundFriction);
+            }
+
+            if (_input.moveDirection.y != 0)
+            {
+                _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y,
+                    moveSpeed * _input.moveDirection.y, accelerationTime);
+            }
+            else
+            {
+                _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 0f, groundFriction);
+            }
+
+            _rigidbody2D.velocity = _desiredVelocity;
+        }
     }
 }
 

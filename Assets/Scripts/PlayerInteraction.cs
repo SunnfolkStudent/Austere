@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Rendering;
 
 public class PlayerInteraction : MonoBehaviour
 {
     public bool haveKey;
     public TextMeshPro interactHelp;
     public GameObject helpText;
+    public GameObject exit;
 
     private InputManager _input;
 
@@ -17,6 +19,7 @@ public class PlayerInteraction : MonoBehaviour
         _input = GetComponent<InputManager>();
         interactHelp.gameObject.SetActive(false);
         haveKey = false;
+        exit.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -56,8 +59,6 @@ public class PlayerInteraction : MonoBehaviour
 
     private void DoorUnlock()
     {
-        //Animator.SetBool("Open", true);
-
-        //door becomes available to go through
+        exit.gameObject.SetActive(true);
     }
 }

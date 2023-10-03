@@ -16,10 +16,9 @@ public class InputNPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && _input.interactHeld)
+        if (other.CompareTag("Player"))
         {
             TriggerDialogue();
-            Debug.Log("MirrorInteract");
         }
     }
 
