@@ -1340,6 +1340,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4292715593574852797, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4356931913774173108, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1388,10 +1392,6 @@ PrefabInstance:
       propertyPath: uiKey
       value: 
       objectReference: {fileID: 299926234}
-    - target: {fileID: 6039505676700656994, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
-      propertyPath: sceneBuildIndex
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2892,6 +2892,18 @@ PrefabInstance:
     - target: {fileID: 2875282856816344953, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060367937612933783, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060367937612933783, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060367937612933783, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7155812959730191175, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
       propertyPath: m_Name
