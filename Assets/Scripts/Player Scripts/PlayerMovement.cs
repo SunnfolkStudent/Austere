@@ -15,12 +15,14 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private InputManager _input;
     private Animator _anim;
+    private SpriteRenderer _sr;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _input = GetComponent<InputManager>();
         _anim = GetComponent<Animator>();
+        _sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -44,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
                     moveSpeed * _input.moveDirection.x, accelerationTime);
                 _anim.Play("Player_SideWalk");
 
-                transform.localScale = new Vector3(_input.moveDirection.x, 1, 1);
+                _sr.transform.localScale = new Vector2(_input.moveDirection.x > 0 ? 1 : -1, 1);
             }
             else
             {

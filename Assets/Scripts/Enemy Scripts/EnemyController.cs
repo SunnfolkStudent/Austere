@@ -16,6 +16,7 @@ public class EnemyPatrol : MonoBehaviour
     private KarmaManager _karma;
     private Animator _anim;
     private Rigidbody2D _rb;
+    private SpriteRenderer _sr;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class EnemyPatrol : MonoBehaviour
         _karma = GetComponent<KarmaManager>();
         _anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
+        _sr = GetComponent<SpriteRenderer>();
         key.gameObject.SetActive(false);
         speed = 1f;
     }
@@ -40,7 +42,10 @@ public class EnemyPatrol : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             _anim.SetBool("isWalking", true);
-            transform.localScale = new Vector3(_rb.velocity.x, 1, 1);
+            //flip when turned
+            //transform.localScale = new Vector3(_rb.velocity.x, 1, 1);
+            _sr.transform.localScale = new Vector2(_rb.velocity.x > 0 ? 1 : -1, 1);
+            
             if (_rb.velocity.y > 0)
             {
                 _anim.SetBool("upWalk", true);
