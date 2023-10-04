@@ -12,6 +12,7 @@ public class PlayerInteraction : MonoBehaviour
     public TextMeshPro interactHelp;
     public GameObject helpText;
     public int sceneBuildIndex;
+    public GameObject uiKey;
 
     private InputManager _input;
 
@@ -20,6 +21,19 @@ public class PlayerInteraction : MonoBehaviour
         _input = GetComponent<InputManager>();
         interactHelp.gameObject.SetActive(false);
         haveKey = false;
+        uiKey.gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (haveKey == true)
+        {
+            uiKey.gameObject.SetActive(true);
+        }
+        else
+        {
+            uiKey.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
