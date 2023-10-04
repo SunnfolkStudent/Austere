@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 7910446055778493265}
   - component: {fileID: 8194509574071802965}
   - component: {fileID: 6838241928126229483}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Austere_Enemy_Baby
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 0
+  speed: 0.5
   maxHealth: 3
   currentHealth: 0
   key: {fileID: 0}
