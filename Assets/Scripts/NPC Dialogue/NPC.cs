@@ -9,6 +9,10 @@ public class NPC : MonoBehaviour
    public int maxHealth = 3;
    public int currentHealth;
 
+   private bool canTakeDamage;
+   private float canTakeDamageTime = 0.02f;
+   private float canTakeDamageCounter;
+
    private InputManager _input;
    private KarmaManager _karma;
 
@@ -19,6 +23,14 @@ public class NPC : MonoBehaviour
       currentHealth = maxHealth;
    }
 
+   private void Update()
+   {
+      if (Time.time > canTakeDamageCounter && !canTakeDamage)
+      {
+         canTakeDamage = true;
+      }
+   }
+
    private void OnTriggerStay2D(Collider2D other)
    {
       if (other.CompareTag("Player") && _input.interactHeld)
@@ -27,14 +39,24 @@ public class NPC : MonoBehaviour
       }
    }
 
+   private void OnTriggerEnter2D(Collider2D other)
+   {
+      if (other.CompareTag("AttackCircle") && canTakeDamage)
+      {
+         TakeDamage();
+         canTakeDamage = false;
+         canTakeDamageCounter = Time.time + canTakeDamageTime;
+      }
+   }
+
    public void TriggerDialogue ()
    {
       FindFirstObjectByType<DialogueManager>().StartDialogue(dialogue);
    }
 
-   public void TakeDamage(int damage)
+   public void TakeDamage()
    {
-      currentHealth -= damage;
+      currentHealth -= 1;
 
       if (currentHealth <= 0)
       {

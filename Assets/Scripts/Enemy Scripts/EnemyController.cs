@@ -12,6 +12,10 @@ public class EnemyPatrol : MonoBehaviour
     public int currentHealth;
     public GameObject key;
 
+    private bool canTakeDamage;
+    private float canTakeDamageTime = 0.02f;
+    private float canTakeDamageCounter;
+
     private float distance;
     private KarmaManager _karma;
     private Animator _anim;
@@ -31,6 +35,11 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Update()
     {
+        if (Time.time > canTakeDamageCounter && !canTakeDamage)
+        {
+            canTakeDamage = true;
+        }
+        
         _anim.SetBool("isWalking", false);
         _rb.velocity = Vector3.zero;
         distance = Vector2.Distance(transform.position, player.transform.position);
@@ -56,17 +65,27 @@ public class EnemyPatrol : MonoBehaviour
                 _anim.SetBool("upWalk", false);
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("AttackCircle") && canTakeDamage)
+        {
+            TakeDamage();
+            canTakeDamage = false;
+            canTakeDamageCounter = Time.time + canTakeDamageTime;
+        }
+    }
+
+    public void TakeDamage()
+    {
+        currentHealth -= 1;
+        //knockback
         if (currentHealth <= 0)
         {
             Die();
             _karma.karmaLevel -= 1;
         }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        //knockback
     }
 
     void Die()

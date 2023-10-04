@@ -6,10 +6,10 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public Animator animator;
-    public Transform attackPoint;
-    public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public bool canAttack;
+    public bool isAttacking;
+    public GameObject attackCircle;
     
     private InputManager _input;
 
@@ -17,6 +17,8 @@ public class PlayerAttack : MonoBehaviour
     {
         _input = GetComponent<InputManager>();
         canAttack = true;
+        isAttacking = false;
+        attackCircle.gameObject.SetActive(false);
     }
 
     void Update()
@@ -29,22 +31,19 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
+        isAttacking = true;
+        StartCoroutine(EnableAndDisable());
         //play attack animation
         //animator.SetTrigger("Attack")
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            Debug.Log("Hit!");
-        }
     }
 
-    private void OnDrawGizmosSelected()
+    IEnumerator EnableAndDisable()
     {
-        if (attackPoint == null)
-            return;
+        attackCircle.gameObject.SetActive(true);
         
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        yield return new WaitForSeconds(0.05f);
+        this.attackCircle.gameObject.SetActive(false);
+        isAttacking = false;
     }
 }
