@@ -75,7 +75,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -87,7 +87,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638319547187786647
+  platformSettingsDirtyTick: 638320102174755726
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Austere_Player_BackWalk_Frame_0
     originalName: 
-    pivot: {x: 0.4666667, y: -0.17999999}
+    pivot: {x: 0.4666667, y: 0.45999998}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 80, y: 4}
   - name: Austere_Player_BackWalk_Frame_1
     originalName: 
-    pivot: {x: 0.4074074, y: -0.11538462}
+    pivot: {x: 0.4074074, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 80, y: 62}
   - name: Austere_Player_BackWalk_Frame_2
     originalName: 
-    pivot: {x: 0.375, y: -0.074074075}
+    pivot: {x: 0.375, y: 0.5185185}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 80, y: 185}
   - name: Austere_Player_BackWalk_Frame_3
     originalName: 
-    pivot: {x: 0.4137931, y: -0.094339624}
+    pivot: {x: 0.4137931, y: 0.509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 43, y: 129}
   - name: Austere_Player_BackWalk_Frame_4
     originalName: 
-    pivot: {x: 0.48387095, y: -0.0925926}
+    pivot: {x: 0.48387095, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -221,7 +221,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Austere_Player_BackWalk_Frame_5
     originalName: 
-    pivot: {x: 0.53333336, y: -0.11320755}
+    pivot: {x: 0.53333336, y: 0.49056605}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -241,7 +241,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 129}
   - name: Austere_Player_BackWalk_Frame_6
     originalName: 
-    pivot: {x: 0.5862069, y: -0.07272727}
+    pivot: {x: 0.5862069, y: 0.5090909}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -261,7 +261,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 66}
   - name: Austere_Player_BackWalk_Frame_7
     originalName: 
-    pivot: {x: 0.60714287, y: -0.054545455}
+    pivot: {x: 0.60714287, y: 0.5272727}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -281,7 +281,7 @@ ScriptedImporter:
     uvTransform: {x: 43, y: 66}
   - name: Austere_Player_BackWalk_Frame_8
     originalName: 
-    pivot: {x: 0.6666667, y: -0.054545455}
+    pivot: {x: 0.6666667, y: 0.5272727}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -301,7 +301,7 @@ ScriptedImporter:
     uvTransform: {x: 80, y: 122}
   - name: Austere_Player_BackWalk_Frame_9
     originalName: 
-    pivot: {x: 0.62068963, y: -0.074074075}
+    pivot: {x: 0.62068963, y: 0.5185185}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -321,7 +321,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 190}
   - name: Austere_Player_BackWalk_Frame_10
     originalName: 
-    pivot: {x: 0.5185185, y: -0.0925926}
+    pivot: {x: 0.5185185, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -341,7 +341,7 @@ ScriptedImporter:
     uvTransform: {x: 43, y: 190}
   - name: Austere_Player_BackWalk_Frame_11
     originalName: 
-    pivot: {x: 0.4827586, y: -0.0925926}
+    pivot: {x: 0.4827586, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3549631070461854631}
   - component: {fileID: 3975029827514200526}
   - component: {fileID: 771356909727800537}
+  - component: {fileID: 7724073230450873520}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -172,6 +173,7 @@ MonoBehaviour:
   interactHeld: 0
   enterPressed: 0
   escPressed: 0
+  attackPressed: 0
   usingGamepad: 0
   usingDpad: 0
 --- !u!114 &3975029827514200526
@@ -207,3 +209,25 @@ MonoBehaviour:
   canTakeDamageTime: 0.2
   canTakeDamageCounter: 0
   leaves: []
+--- !u!95 &7724073230450873520
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356931913774173108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20bc6572efaa2bf41b4dafd3b032632a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
