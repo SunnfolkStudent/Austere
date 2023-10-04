@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
+    public static bool PlayerControlsDisabled = false;
+
     public Animator animator;
     
     private Queue<string> sentences;
@@ -23,6 +25,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Dialogue Start");
         
         animator.SetBool("IsOpen", true);
+        PlayerControlsDisabled = true;
 
         nameText.text = dialogue.name;
 
@@ -62,6 +65,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        PlayerControlsDisabled = false;
     }
 
 }

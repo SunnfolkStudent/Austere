@@ -31,10 +31,8 @@ public class PlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (InputDialogueManager.playerControlsDisabled == false)
+        if (InputDialogueManager.playerControlsDisabled == false || DialogueManager.PlayerControlsDisabled == false)
         {
-
-
             if (_input.moveDirection.magnitude > 1)
             {
                 _input.moveDirection.Normalize();
@@ -45,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
                 _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x,
                     moveSpeed * _input.moveDirection.x, accelerationTime);
                 _anim.Play("Player_SideWalk");
-                Debug.Log(_input.moveDirection.x);
 
                 transform.localScale = new Vector3(_input.moveDirection.x, 1, 1);
             }
@@ -78,11 +75,10 @@ public class PlayerMovement : MonoBehaviour
             }
 
             _rigidbody2D.velocity = _desiredVelocity;
-            
-            
         }
-        else
-        {
+        if (InputDialogueManager.playerControlsDisabled == true || DialogueManager.PlayerControlsDisabled == true)
+        { 
+            
             _rigidbody2D.velocity = Vector3.zero;
             _anim.Play("Player_Idle");
         }

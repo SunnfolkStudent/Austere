@@ -7,9 +7,16 @@ public class InputNPC : MonoBehaviour
 {
     public Dialogue dialogue;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private InputManager _input;
+
+    private void Start()
     {
-        if (other.CompareTag("Player"))
+        _input = GetComponent<InputManager>();
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") &&  _input.interactHeld)
         {
             TriggerDialogue();
         }
