@@ -9,17 +9,21 @@ public class NPC : MonoBehaviour
    public int maxHealth = 3;
    public int currentHealth;
 
+   public AudioClip ghostSigh;
+
    private bool canTakeDamage;
    private float canTakeDamageTime = 0.02f;
    private float canTakeDamageCounter;
 
    private InputManager _input;
    private KarmaManager _karma;
+   private AudioSource _as;
 
    private void Start()
    {
       _input = GetComponent<InputManager>();
       _karma = GetComponent<KarmaManager>();
+      _as = GetComponent<AudioSource>();
       currentHealth = maxHealth;
    }
 
@@ -36,6 +40,7 @@ public class NPC : MonoBehaviour
       if (other.CompareTag("Player") && _input.interactHeld)
       {
          TriggerDialogue();
+         _as.PlayOneShot(ghostSigh);
       }
    }
 

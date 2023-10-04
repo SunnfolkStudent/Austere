@@ -12,15 +12,18 @@ public class PlayerHealthManager : MonoBehaviour
 
     [Header("IFrames")] 
     public bool canTakeDamage;
-    public float canTakeDamageTime = 0.2f;
+    public float canTakeDamageTime = 0.8f;
     public float canTakeDamageCounter;
+
+    public AudioClip playerDamaged;
+    public AudioClip playerHealed;
 
     [Header("HealthBar")] 
     public Image[] leaves;
 
     private PlayerMovement _playerMovement;
     private PlayerAttack _playerAttack;
-    private SpriteRenderer _sr;
+    private AudioSource _as;
 
     private void Start()
     {
@@ -28,7 +31,7 @@ public class PlayerHealthManager : MonoBehaviour
         lives = PlayerPrefs.GetInt("Lives");
         _playerMovement = GetComponent<PlayerMovement>();
         _playerAttack = GetComponent<PlayerAttack>();
-        _sr = GetComponent<SpriteRenderer>();
+        _as = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -56,13 +59,12 @@ public class PlayerHealthManager : MonoBehaviour
             //up animation
             _playerAttack.canAttack = true;
             canTakeDamage = true;
+            _as.PlayOneShot(playerHealed);
         }
-    }
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if (canTakeDamage && col.gameObject.CompareTag("Enemy"))
+        if (canTakeDamage && other.gameObject.CompareTag("Enemy"))
         {
             lives -= 1;
+            _as.PlayOneShot(playerDamaged);
             if (lives <= 0)
             {
                 lives = 0;
@@ -72,6 +74,21 @@ public class PlayerHealthManager : MonoBehaviour
             canTakeDamageCounter = Time.time + canTakeDamageTime;
         }
     }
+    /*private void OnTriggerStay2D(Collider2D other)
+    {
+        if (canTakeDamage && other.gameObject.CompareTag("Enemy"))
+        {
+            lives -= 1;
+            _as.PlayOneShot(playerDamaged);
+            if (lives <= 0)
+            {
+                lives = 0;
+                Down();
+            }
+            canTakeDamage = false;
+            canTakeDamageCounter = Time.time + canTakeDamageTime;
+        }
+    }*/
 
     private void Down()
     {

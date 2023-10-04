@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour
     public int currentHealth;
     public GameObject key;
 
+    public AudioClip keyDrop;
+
     private bool canTakeDamage;
     private float canTakeDamageTime = 0.02f;
     private float canTakeDamageCounter;
@@ -21,6 +23,7 @@ public class EnemyController : MonoBehaviour
     private Animator _anim;
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
+    private AudioSource _as;
 
     private void Start()
     {
@@ -29,6 +32,7 @@ public class EnemyController : MonoBehaviour
         _anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _sr = GetComponent<SpriteRenderer>();
+        _as = GetComponent<AudioSource>();
         key.gameObject.SetActive(false);
         speed = 1f;
     }
@@ -93,7 +97,7 @@ public class EnemyController : MonoBehaviour
     void Die()
     {
         key.gameObject.SetActive(true);
-        //key audio
+        _as.PlayOneShot(keyDrop);
         Destroy(gameObject);
     }
 }
