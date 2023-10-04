@@ -16,7 +16,7 @@ public class PlayerHealthManager : MonoBehaviour
     public float canTakeDamageCounter;
 
     [Header("HealthBar")] 
-    public SpriteRenderer[] leaves;
+    public Image[] leaves;
 
     private PlayerMovement _playerMovement;
     private PlayerAttack _playerAttack;
@@ -42,7 +42,7 @@ public class PlayerHealthManager : MonoBehaviour
 
         for (int i = 0; i < leaves.Length; i++)
         {
-            //leaves[i].color = i < lives ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
+            leaves[i].color = i < lives ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
         }
     }
     private void OnTriggerStay2D(Collider2D other)
