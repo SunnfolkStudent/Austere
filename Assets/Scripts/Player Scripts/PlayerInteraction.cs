@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 public class PlayerInteraction : MonoBehaviour
 {
     public bool haveKey;
-    public TextMeshPro interactHelp;
-    public GameObject helpText;
+    //public TextMeshPro interactHelp;
+    //public GameObject helpText;
     public int sceneBuildIndex;
     public GameObject uiKey;
 
@@ -19,7 +19,7 @@ public class PlayerInteraction : MonoBehaviour
     private void Start()
     {
         _input = GetComponent<InputManager>();
-        interactHelp.gameObject.SetActive(false);
+        //interactHelp.gameObject.SetActive(false);
         haveKey = false;
         uiKey.gameObject.SetActive(false);
     }
@@ -44,12 +44,12 @@ public class PlayerInteraction : MonoBehaviour
             Destroy(other.gameObject);
         }
         
-        if (other.CompareTag("HelpText"))
+        /*if (other.CompareTag("HelpText"))
         {
             Debug.Log("interactText");
             interactHelp.gameObject.SetActive(true);
              DestroyObjectDelayed();
-        }
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -63,7 +63,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void DestroyObjectDelayed()
     {
-        Destroy(interactHelp, 10);
-        Destroy(helpText, 10);
+        //Destroy(interactHelp, 10);
+        //Destroy(helpText, 10);
     }
 }
