@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
     {
         _input = GetComponent<InputManager>();
         isPaused = false;
+        pauseMenu.gameObject.SetActive(false);
     }
 
     private void Update()
