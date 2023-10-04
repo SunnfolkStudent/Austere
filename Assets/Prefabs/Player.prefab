@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4292715593574852797}
   m_Layer: 0
   m_Name: attackCircle
-  m_TagString: Untagged
+  m_TagString: AttackCircle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,6 +285,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
 --- !u!95 &7724073230450873520
 Animator:
   serializedVersion: 7
@@ -320,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   haveKey: 0
-  sceneBuildIndex: 1
+  sceneBuildIndex: 2
   uiKey: {fileID: 0}
 --- !u!114 &279638071089546510
 MonoBehaviour:
@@ -335,9 +336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  attackPoint: {fileID: 0}
-  attackRange: 0.5
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
   canAttack: 0
+  isAttacking: 0
+  attackCircle: {fileID: 2499529121675452406}
