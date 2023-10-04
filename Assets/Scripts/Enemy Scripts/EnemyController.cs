@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnemyPatrol : MonoBehaviour
 {
     public GameObject player;
-    public float speed = 1f;
+    public float speed;
 
     public int maxHealth = 3;
     public int currentHealth;
@@ -24,6 +24,7 @@ public class EnemyPatrol : MonoBehaviour
         _anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         key.gameObject.SetActive(false);
+        speed = 1f;
     }
 
     private void Update()
