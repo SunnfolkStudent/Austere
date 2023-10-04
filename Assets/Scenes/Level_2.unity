@@ -130,7 +130,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: 58eaa2fcb837a6e48908739d10b51200, type: 3}
       propertyPath: m_Name
-      value: key_door_down
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 58eaa2fcb837a6e48908739d10b51200, type: 3}
       propertyPath: m_TagString
@@ -1622,7 +1622,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2006,7 +2006,7 @@ GameObject:
   - component: {fileID: 1399628295}
   - component: {fileID: 1399628294}
   m_Layer: 0
-  m_Name: level_2 (2)
+  m_Name: Level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2290,7 +2290,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3944185554797433488, guid: 401e72c51974c19469766fd60285a210, type: 3}
       propertyPath: m_Name
-      value: riddle_mirror
+      value: RiddleMirror
       objectReference: {fileID: 0}
     - target: {fileID: 4469346484433617412, guid: 401e72c51974c19469766fd60285a210, type: 3}
       propertyPath: m_Size.y
@@ -2813,7 +2813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7155812959730191175, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
       propertyPath: m_Name
-      value: Austere_Enemy_Baby
+      value: EnemyBaby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2843,7 +2843,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2970,7 +2970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5359606126483762833, guid: 7ef0f75a2008b924fb00798ebec02355, type: 3}
       propertyPath: m_Name
-      value: Lost Soul
+      value: LostSoul
       objectReference: {fileID: 0}
     - target: {fileID: 6746191799892627529, guid: 7ef0f75a2008b924fb00798ebec02355, type: 3}
       propertyPath: animator
@@ -2999,7 +2999,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3747364410364681409, guid: b8b24bd1955f1f642a4d4f832e1a9fc4, type: 3}
       propertyPath: m_Name
-      value: Restless Ghost
+      value: RestlessGhost
       objectReference: {fileID: 0}
     - target: {fileID: 4173898542697280676, guid: b8b24bd1955f1f642a4d4f832e1a9fc4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3068,7 +3068,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3666012045596037739, guid: cc744a0d2ca1a65469f71fd9e30c4b37, type: 3}
       propertyPath: m_Name
-      value: heal_fountain
+      value: HealFountain
       objectReference: {fileID: 0}
     - target: {fileID: 4543481146122025486, guid: cc744a0d2ca1a65469f71fd9e30c4b37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3165,7 +3165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1118019171311693148, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: m_Name
-      value: Wandering Spirit
+      value: WanderingSpirit
       objectReference: {fileID: 0}
     - target: {fileID: 7048196722868678134, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: animator
@@ -3189,6 +3189,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2753758169344610827}
+  - {fileID: 1399628296}
   - {fileID: 761761667}
   - {fileID: 1809817200}
   - {fileID: 8852798696078879123}
@@ -3197,7 +3198,6 @@ SceneRoots:
   - {fileID: 718370361}
   - {fileID: 2032388561}
   - {fileID: 2028547656}
-  - {fileID: 1399628296}
   - {fileID: 8849409018609376658}
   - {fileID: 95378931}
   - {fileID: 206110235067514581}
