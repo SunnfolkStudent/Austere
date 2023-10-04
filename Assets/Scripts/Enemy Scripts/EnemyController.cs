@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnemyPatrol : MonoBehaviour
 {
     public GameObject player;
-    public float speed;
+    public float speed = 1f;
 
     public int maxHealth = 3;
     public int currentHealth;
@@ -43,6 +43,7 @@ public class EnemyPatrol : MonoBehaviour
             if (_rb.velocity.y > 0)
             {
                 _anim.SetBool("upWalk", true);
+                Debug.Log("Enemy UP");
             }
             else
             {
