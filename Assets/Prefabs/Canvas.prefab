@@ -115,6 +115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIKey
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 26d19473d7485764c87b620e5a433031, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 26d19473d7485764c87b620e5a433031, type: 3}
       propertyPath: m_LocalScale.x
       value: 299.99997
@@ -185,6 +189,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8087146509018905226}
     m_Modifications:
+    - target: {fileID: 636433236913716848, guid: f307e78992fe13349b8bcd7c079e7e2a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044182075999754756, guid: f307e78992fe13349b8bcd7c079e7e2a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3804192133004399370, guid: f307e78992fe13349b8bcd7c079e7e2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -804
@@ -225,9 +237,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3986748651438884567, guid: f307e78992fe13349b8bcd7c079e7e2a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4118205518182857583, guid: f307e78992fe13349b8bcd7c079e7e2a, type: 3}
       propertyPath: m_Name
       value: twing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664140739182630901, guid: f307e78992fe13349b8bcd7c079e7e2a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767535586824125667, guid: f307e78992fe13349b8bcd7c079e7e2a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664802417652447119, guid: f307e78992fe13349b8bcd7c079e7e2a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

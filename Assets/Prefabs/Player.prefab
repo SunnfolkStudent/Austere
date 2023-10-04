@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 3975029827514200526}
   - component: {fileID: 771356909727800537}
   - component: {fileID: 7724073230450873520}
-  m_Layer: 0
+  - component: {fileID: 6039505676700656994}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8117527033558826032, guid: 0820836f3ed788e4a91943c11d1a0aa1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -205,10 +206,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 5
   maxLives: 5
+  isDown: 0
   canTakeDamage: 0
   canTakeDamageTime: 0.2
   canTakeDamageCounter: 0
-  leaves: []
+  leaves:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!95 &7724073230450873520
 Animator:
   serializedVersion: 7
@@ -231,3 +237,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6039505676700656994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356931913774173108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65d86dce71fe6b45ab7a3bfffd640a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  haveKey: 0
+  interactHelp: {fileID: 0}
+  helpText: {fileID: 0}
+  sceneBuildIndex: 0
+  uiKey: {fileID: 0}
