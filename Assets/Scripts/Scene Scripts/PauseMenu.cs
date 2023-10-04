@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         _input = GetComponent<InputManager>();
+        isPaused = false;
     }
 
     private void Update()
