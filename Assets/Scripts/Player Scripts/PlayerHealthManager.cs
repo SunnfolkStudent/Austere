@@ -8,6 +8,7 @@ public class PlayerHealthManager : MonoBehaviour
     [Header("Health")] 
     public int lives = 5;
     public int maxLives = 5;
+    public bool isDown;
 
     [Header("IFrames")] 
     public bool canTakeDamage;
@@ -15,11 +16,17 @@ public class PlayerHealthManager : MonoBehaviour
     public float canTakeDamageCounter;
 
     [Header("HealthBar")] 
-    public Image[] leaves;
+    public Sprite[] leaves;
+
+    private PlayerMovement _playerMovement;
+    private PlayerAttack _playerAttack;
 
     private void Start()
     {
+        isDown = false;
         lives = PlayerPrefs.GetInt("Lives");
+        _playerMovement = GetComponent<PlayerMovement>();
+        _playerAttack = GetComponent<PlayerAttack>();
     }
 
     private void Update()
@@ -42,6 +49,11 @@ public class PlayerHealthManager : MonoBehaviour
         {
             if (lives >= maxLives) return;
             lives += 1;
+            isDown = false;
+            _playerMovement.moveSpeed = 2f;
+            //up animation
+            _playerAttack.canAttack = true;
+            canTakeDamage = true;
         }
     }
     private void OnCollisionEnter2D(Collision2D col)
@@ -51,10 +63,20 @@ public class PlayerHealthManager : MonoBehaviour
             lives -= 1;
             if (lives <= 0)
             {
-                // Reload Scene
+                lives = 0;
+                Down();
             }
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;
         }
+    }
+
+    private void Down()
+    {
+        isDown = true;
+        _playerMovement.moveSpeed = 0.5f;
+        //down animation
+        _playerAttack.canAttack = false;
+        canTakeDamage = false;
     }
 }

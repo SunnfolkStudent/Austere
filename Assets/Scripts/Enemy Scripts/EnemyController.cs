@@ -10,6 +10,7 @@ public class EnemyPatrol : MonoBehaviour
 
     public int maxHealth = 3;
     public int currentHealth;
+    public GameObject key;
 
     private float distance;
     private KarmaManager _karma;
@@ -22,11 +23,13 @@ public class EnemyPatrol : MonoBehaviour
         _karma = GetComponent<KarmaManager>();
         _anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
+        key.gameObject.SetActive(false);
     }
 
     private void Update()
     {
         _anim.SetBool("isWalking", false);
+        _rb.velocity = Vector3.zero;
         distance = Vector2.Distance(transform.position, player.transform.position);
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
@@ -36,6 +39,7 @@ public class EnemyPatrol : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             _anim.SetBool("isWalking", true);
+            transform.localScale = new Vector3(_rb.velocity.x, 1, 1);
             if (_rb.velocity.y > 0)
             {
                 _anim.SetBool("upWalk", true);
@@ -45,13 +49,6 @@ public class EnemyPatrol : MonoBehaviour
                 _anim.SetBool("upWalk", false);
             }
         }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        //knockback
-
         if (currentHealth <= 0)
         {
             Die();
@@ -59,8 +56,16 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        //knockback
+    }
+
     void Die()
     {
+        key.gameObject.SetActive(true);
+        //key audio
         Destroy(gameObject);
     }
 }

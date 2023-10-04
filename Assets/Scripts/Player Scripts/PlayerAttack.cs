@@ -9,17 +9,19 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    public bool canAttack;
     
     private InputManager _input;
 
     private void Start()
     {
         _input = GetComponent<InputManager>();
+        canAttack = true;
     }
 
     void Update()
     {
-        if (_input.attackPressed)
+        if (_input.attackPressed && canAttack == true)
         {
             Attack();
         }

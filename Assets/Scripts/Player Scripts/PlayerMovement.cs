@@ -4,12 +4,12 @@ using UnityEngine.Serialization;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed = 5f;
+    public float moveSpeed = 2f;
     private Vector2 _desiredVelocity;
     
     [Header("Acceleration")]
-    public float accelerationTime = 0.02f;
-    public float groundFriction = 0.03f;
+    public float accelerationTime = 0.2f;
+    public float groundFriction = 0.15f;
 
     [Header("Components")]
     private Rigidbody2D _rigidbody2D;
