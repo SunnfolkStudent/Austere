@@ -14,6 +14,8 @@ public class InputDialogueManager : MonoBehaviour
     public GameObject inputField;
     public string answer = "phone";
 
+    public GameObject key;
+
     public static bool playerControlsDisabled = false;
 
     public Animator animator;
@@ -25,6 +27,7 @@ public class InputDialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         _inputManager = GetComponent<InputManager>();
+        key.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -88,7 +91,8 @@ public class InputDialogueManager : MonoBehaviour
         if (textInput.Contains(answer))
         { 
                EndDialogue();
-               //drop key
+               key.gameObject.SetActive(true);
+               //key audio
         }
         
     }
