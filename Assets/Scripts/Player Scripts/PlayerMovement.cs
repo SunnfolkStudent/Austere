@@ -45,15 +45,9 @@ public class PlayerMovement : MonoBehaviour
                 _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x,
                     moveSpeed * _input.moveDirection.x, accelerationTime);
                 _anim.Play("Player_SideWalk");
-                
-                if (_rigidbody2D.velocity.x < 0f)
-                {
-                    gameObject.transform.localScale = new Vector3(1, 1, 1);
-                }
-                if (_rigidbody2D.velocity.x > 0f)
-                {
-                    gameObject.transform.localScale = new Vector3(-1, 1, 1);
-                }
+                Debug.Log(_input.moveDirection.x);
+
+                transform.localScale = new Vector3(_input.moveDirection.x, 1, 1);
             }
             else
             {
@@ -84,6 +78,13 @@ public class PlayerMovement : MonoBehaviour
             }
 
             _rigidbody2D.velocity = _desiredVelocity;
+            
+            
+        }
+        else
+        {
+            _rigidbody2D.velocity = Vector3.zero;
+            _anim.Play("Player_Idle");
         }
     }
 }
