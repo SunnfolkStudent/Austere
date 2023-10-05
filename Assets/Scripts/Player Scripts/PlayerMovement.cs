@@ -15,14 +15,14 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private InputManager _input;
     private Animator _anim;
-    private SpriteRenderer _sr;
+    private PlayerHealthManager _phm;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _input = GetComponent<InputManager>();
         _anim = GetComponent<Animator>();
-        _sr = GetComponent<SpriteRenderer>();
+        _phm = GetComponent<PlayerHealthManager>();
     }
 
     private void Update()
@@ -45,36 +45,73 @@ public class PlayerMovement : MonoBehaviour
                 _input.moveDirection.Normalize();
             }
 
-            if (_input.moveDirection != Vector2.zero)
+            if (_phm.isDown == false)
             {
-                _anim.Play("Player_Walk");
-                _anim.SetFloat("X", _input.moveDirection.x);
-                _anim.SetFloat("Y", _input.moveDirection.y);
-            }
-            else
-            {
-                _anim.Play("Player_Idle"); 
-            }
+                if (_input.moveDirection != Vector2.zero )
+                {
+                    _anim.Play("Player_Walk");
+                    _anim.SetFloat("X", _input.moveDirection.x);
+                    _anim.SetFloat("Y", _input.moveDirection.y);
+                }
+                else
+                {
+                    _anim.Play("Player_Idle"); 
+                }
             
-            // direction = animation
-            if (_input.moveDirection.x != 0)
-            {
-                _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x,
-                    moveSpeed * _input.moveDirection.x, accelerationTime);
-            }
-            else
-            {
-                _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 0f, groundFriction);
-            }
+                // direction = animation
+                if (_input.moveDirection.x != 0)
+                {
+                    _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x,
+                        moveSpeed * _input.moveDirection.x, accelerationTime);
+                }
+                else
+                {
+                    _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 0f, groundFriction);
+                }
             
-            if(_input.moveDirection.y != 0)
-            {
-                _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y,
-                    moveSpeed * _input.moveDirection.y, accelerationTime);
+                if(_input.moveDirection.y != 0)
+                {
+                    _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y,
+                        moveSpeed * _input.moveDirection.y, accelerationTime);
+                }
+                else
+                {
+                    _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 0f, groundFriction);
+                }
             }
             else
             {
-                _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 0f, groundFriction);
+                if (_input.moveDirection != Vector2.zero )
+                {
+                    _anim.Play("Player_Crawl");
+                    _anim.SetFloat("X", _input.moveDirection.x);
+                    _anim.SetFloat("Y", _input.moveDirection.y);
+                }
+                else
+                {
+                    _anim.Play("Player_Crawl_Idle"); 
+                }
+            
+                // direction = animation
+                if (_input.moveDirection.x != 0)
+                {
+                    _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x,
+                        moveSpeed * _input.moveDirection.x, accelerationTime);
+                }
+                else
+                {
+                    _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 0f, groundFriction);
+                }
+            
+                if(_input.moveDirection.y != 0)
+                {
+                    _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y,
+                        moveSpeed * _input.moveDirection.y, accelerationTime);
+                }
+                else
+                {
+                    _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 0f, groundFriction);
+                }
             }
             
 
@@ -84,7 +121,15 @@ public class PlayerMovement : MonoBehaviour
         { 
             
             _rigidbody2D.velocity = Vector3.zero;
-            _anim.Play("Player_Idle");
+            
+            if(_phm.isDown == true)
+            {
+                _anim.Play("Player_CrawlIdle");
+            }
+            else
+            {
+                _anim.Play("Player_Idle");
+            }
         }
     }
 }
