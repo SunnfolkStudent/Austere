@@ -34,6 +34,7 @@ public class CutScene : MonoBehaviour
             timeElapsed += Time.deltaTime;
             t = timeElapsed / duration;
             blackOut.color = Color.Lerp(from, to, t);
+            yield return null;
             yield return new WaitForSeconds(2);
             _audio.PlayOneShot(ambulance);
             yield return new WaitForSeconds(5);
