@@ -190,6 +190,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 553558312}
     - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
+      propertyPath: ghostHurt
+      value: 
+      objectReference: {fileID: 8300000, guid: f56c1698bafb9814ab90ac0b7ec6d73b, type: 3}
+    - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: ghostSigh
       value: 
       objectReference: {fileID: 8300000, guid: bf55a9b9e8ff2ad438842aafcc498980, type: 3}
@@ -1105,6 +1109,10 @@ PrefabInstance:
       propertyPath: uiKey
       value: 
       objectReference: {fileID: 1172062613}
+    - target: {fileID: 6039505676700656994, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: keyPickUp
+      value: 
+      objectReference: {fileID: 8300000, guid: 08919d597b10c97429b315a811b6be75, type: 3}
     - target: {fileID: 6039505676700656994, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: sceneBuildIndex
       value: 6

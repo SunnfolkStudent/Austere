@@ -567,6 +567,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1271993526}
     - target: {fileID: 6039505676700656994, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: keyPickUp
+      value: 
+      objectReference: {fileID: 8300000, guid: 08919d597b10c97429b315a811b6be75, type: 3}
+    - target: {fileID: 6039505676700656994, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: sceneBuildIndex
       value: 4
       objectReference: {fileID: 0}
@@ -1381,6 +1385,10 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1677284955}
+    - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
+      propertyPath: ghostHurt
+      value: 
+      objectReference: {fileID: 8300000, guid: f56c1698bafb9814ab90ac0b7ec6d73b, type: 3}
     - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: ghostSigh
       value: 

@@ -1906,6 +1906,10 @@ PrefabInstance:
       propertyPath: uiKey
       value: 
       objectReference: {fileID: 299926234}
+    - target: {fileID: 6039505676700656994, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: keyPickUp
+      value: 
+      objectReference: {fileID: 8300000, guid: 08919d597b10c97429b315a811b6be75, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3631,6 +3635,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3813046104610737495, guid: 7ef0f75a2008b924fb00798ebec02355, type: 3}
+      propertyPath: ghostHurt
+      value: 
+      objectReference: {fileID: 8300000, guid: f56c1698bafb9814ab90ac0b7ec6d73b, type: 3}
+    - target: {fileID: 3813046104610737495, guid: 7ef0f75a2008b924fb00798ebec02355, type: 3}
       propertyPath: ghostSigh
       value: 
       objectReference: {fileID: 8300000, guid: 7a2b80be099415843b892f75e9469e36, type: 3}
@@ -3871,6 +3879,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 139836292963704812, guid: b8b24bd1955f1f642a4d4f832e1a9fc4, type: 3}
+      propertyPath: ghostHurt
+      value: 
+      objectReference: {fileID: 8300000, guid: f56c1698bafb9814ab90ac0b7ec6d73b, type: 3}
     - target: {fileID: 139836292963704812, guid: b8b24bd1955f1f642a4d4f832e1a9fc4, type: 3}
       propertyPath: ghostSigh
       value: 
