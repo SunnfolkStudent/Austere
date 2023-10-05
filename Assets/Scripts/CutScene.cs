@@ -8,6 +8,7 @@ public class CutScene : MonoBehaviour
 {
     public AudioClip ambulance;
     public Image blackOut;
+    public float fadeSpeed = 1f;
 
     private AudioSource _audio;
 
@@ -19,19 +20,19 @@ public class CutScene : MonoBehaviour
 
     public void EndCutScene()
     {
-        StartCoroutine(ChangeColor(true));
+        StartCoroutine(ChangeColor());
         _audio.PlayOneShot(ambulance);
     }
 
-    IEnumerator ChangeColor(bool fadeAway)
+    IEnumerator ChangeColor()
     {
-        if (fadeAway)
+        float alpha = 1.0f;
+
+        while (alpha > 0.0f)
         {
-            for (float i = 20; i <= 1; i -= Time.deltaTime)
-            {
-                blackOut.color = new Color(1, 1, 1, 1);
-                yield return null;
-            }
+            alpha -= fadeSpeed * Time.deltaTime;
+            blackOut.color = new Color(1, 1, 1, 1);
+            yield return null;
         }
     }
 }
