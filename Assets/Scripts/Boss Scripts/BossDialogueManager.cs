@@ -49,7 +49,7 @@ public class BossDialogueManager : MonoBehaviour
 
         //string sentence = sentences.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        //StartCoroutine(TypeSentence(sentence));
     }
 
     IEnumerator TypeSentence(string sentence)
