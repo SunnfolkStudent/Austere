@@ -27,7 +27,7 @@ public class CutScene : MonoBehaviour
     {
         if (fadeAway)
         {
-            for (float i = 0; i <= 2050; i -= Time.deltaTime)
+            for (float i = 20; i <= 1; i -= Time.deltaTime)
             {
                 blackOut.color = new Color(1, 1, 1, 1);
                 yield return null;
