@@ -65,7 +65,7 @@ public class NPC : MonoBehaviour
 
       if (currentHealth <= 0)
       {
-         _karma.BigKarma();
+         KarmaManager.instance.AddBigKarma();
          Destroy(gameObject);
       }
    }

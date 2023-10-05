@@ -20,7 +20,6 @@ public class EnemyController : MonoBehaviour
     private float canTakeDamageCounter;
 
     private float distance;
-    private PlayerAttack _karma;
     private Animator _anim;
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
@@ -29,7 +28,6 @@ public class EnemyController : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-        _karma = GetComponent<PlayerAttack>();
         _anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _sr = GetComponent<SpriteRenderer>();
@@ -91,7 +89,7 @@ public class EnemyController : MonoBehaviour
         currentHealth -= 1;
         if (currentHealth <= 0)
         {
-            _karma.SmallKarma();
+            KarmaManager.instance.AddSmallKarma();
             Die();
         }
     }
