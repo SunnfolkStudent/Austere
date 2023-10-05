@@ -17,6 +17,7 @@ public class CutScene : MonoBehaviour
     {
         _audio = GetComponent<AudioSource>();
         blackOut.color = new Color(1, 1, 1, 0);
+        title.color = new Color(1, 1, 1, 0);
     }
 
     public void EndCutScene()
