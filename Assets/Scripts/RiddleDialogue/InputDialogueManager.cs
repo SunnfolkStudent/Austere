@@ -15,6 +15,7 @@ public class InputDialogueManager : MonoBehaviour
     public string answer = "phone";
 
     public GameObject key;
+    public AudioClip keyDrop;
 
     public static bool playerControlsDisabled = false;
 
@@ -22,11 +23,13 @@ public class InputDialogueManager : MonoBehaviour
     
     private Queue<string> sentences;
     private InputManager _inputManager;
+    private AudioSource _audio;
         
     void Start()
     {
         sentences = new Queue<string>();
         _inputManager = GetComponent<InputManager>();
+        _audio = GetComponent<AudioSource>();
         key.gameObject.SetActive(false);
     }
 
@@ -92,7 +95,7 @@ public class InputDialogueManager : MonoBehaviour
         { 
                EndDialogue();
                key.gameObject.SetActive(true);
-               //key audio
+               _audio.PlayOneShot(keyDrop);
         }
         
     }
