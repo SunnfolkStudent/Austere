@@ -9,7 +9,7 @@ public class CutScene : MonoBehaviour
 {
     public AudioClip ambulance;
     public Image blackOut;
-    public GameObject title;
+    public Image title;
 
     private AudioSource _audio;
 
@@ -44,14 +44,14 @@ public class CutScene : MonoBehaviour
     {
         _audio.PlayOneShot(ambulance);
         yield return new WaitForSeconds(5);
-        title.gameObject.SetActive(true);
+        title.enabled = true;
         StartCoroutine(ChangeColorTitle(title, Color.black, new Color(1,1,1,1), 3f));
         yield return new WaitForSeconds(12);
         SceneManager.LoadScene("Tutorial_Level");
         yield return null;
     }
     
-    IEnumerator ChangeColorTitle(GameObject title, Color from, Color to, float duration)
+    IEnumerator ChangeColorTitle(Image title, Color from, Color to, float duration)
     {
         float timeElapsed = 0.0f;
 
