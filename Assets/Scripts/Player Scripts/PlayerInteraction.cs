@@ -24,11 +24,6 @@ public class PlayerInteraction : MonoBehaviour
         //interactHelp.gameObject.SetActive(false);
         haveKey = false;
         uiKey.gameObject.SetActive(false);
-        
-        if (SceneManager.GetActiveScene().name == "Tutorial_Level")
-        {
-            haveKey = true;
-        }
     }
 
     private void Update()
