@@ -8,7 +8,7 @@ public class CutScene : MonoBehaviour
 {
     public AudioClip ambulance;
     public Image blackOut;
-    public float fadeSpeed = .05f;
+    public float fadeSpeed = 20f;
 
     private AudioSource _audio;
 
