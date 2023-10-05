@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealthManager : MonoBehaviour
 {
     [Header("Health")] 
-    public int lives = 5;
+    public int lives = 1;
     public int maxLives = 5;
     public bool isDown;
 

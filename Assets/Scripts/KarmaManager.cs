@@ -29,7 +29,14 @@ public class KarmaManager : MonoBehaviour
 
     public void AddBigKarma()
     {
-        karmaLevel = +3;
+        karmaLevel += 3;
+        PlayerPrefs.SetInt("Karma", karmaLevel);
+        Debug.Log("KarmaLevel: " + karmaLevel);
+    }
+
+    public void ResetKarma()
+    {
+        karmaLevel = 0;
         PlayerPrefs.SetInt("Karma", karmaLevel);
         Debug.Log("KarmaLevel: " + karmaLevel);
     }
