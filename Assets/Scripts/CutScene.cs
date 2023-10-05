@@ -20,13 +20,14 @@ public class CutScene : MonoBehaviour
     public void EndCutScene()
     {
         StartCoroutine(ChangeColor(true));
+        _audio.PlayOneShot(ambulance);
     }
 
     IEnumerator ChangeColor(bool fadeAway)
     {
         if (fadeAway)
         {
-            for (float i = 1; i >= 0; i -= Time.deltaTime)
+            for (float i = 0; i <= 1; i -= Time.deltaTime)
             {
                 blackOut.color = new Color(1, 1, 1, 1);
                 yield return null;
