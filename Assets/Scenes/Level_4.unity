@@ -946,12 +946,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 190126523}
-  speed: 0.25
+  speed: 0.5
   maxHealth: 3
   currentHealth: 3
   key: {fileID: 78390279}
   keyDrop: {fileID: 8300000, guid: 08919d597b10c97429b315a811b6be75, type: 3}
   enemyGrowl: {fileID: 0}
+  enemy: {fileID: 738108250}
 --- !u!50 &738108252
 Rigidbody2D:
   serializedVersion: 4
@@ -1292,8 +1293,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.02343762, y: 0.95747906}
-  m_Radius: 0.8805751
+  m_Offset: {x: -0.02343762, y: 0.9637352}
+  m_Radius: 0.7867352
 --- !u!1001 &1296132214
 PrefabInstance:
   m_ObjectHideFlags: 0
