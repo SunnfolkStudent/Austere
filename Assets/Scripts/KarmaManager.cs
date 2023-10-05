@@ -61,7 +61,7 @@ public class KarmaManager : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("hit player");
-            if (karmaLevel >= 5)
+            if (karmaLevel >= 7)
             {
                 hellBoss.gameObject.SetActive(true);
             }else if (karmaLevel >= 1)
@@ -77,7 +77,7 @@ public class KarmaManager : MonoBehaviour
 
     private void EndingCheck()
     {
-        if (karmaLevel >= 5)
+        if (karmaLevel >= 7)
         {
             hellEnding.gameObject.SetActive(true);
             Debug.Log("hellImage");

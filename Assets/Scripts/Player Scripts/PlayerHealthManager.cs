@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerHealthManager : MonoBehaviour
@@ -32,6 +33,11 @@ public class PlayerHealthManager : MonoBehaviour
         _playerMovement = GetComponent<PlayerMovement>();
         _playerAttack = GetComponent<PlayerAttack>();
         _as = GetComponent<AudioSource>();
+        
+        if (SceneManager.GetActiveScene().name == "Tutorial_Level")
+        {
+            lives = 1;
+        }
     }
 
     private void Update()
