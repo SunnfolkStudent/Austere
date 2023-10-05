@@ -40,9 +40,8 @@ public class CutScene : MonoBehaviour
 
     IEnumerator AudioandChangeScenes()
     {
-        yield return new WaitForSeconds(2);
         _audio.PlayOneShot(ambulance);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7);
         SceneManager.LoadScene("Tutorial_Level");
         yield return null;
     }
