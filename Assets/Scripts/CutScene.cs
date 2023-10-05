@@ -22,6 +22,7 @@ public class CutScene : MonoBehaviour
     public void EndCutScene()
     {
         StartCoroutine(ChangeColor(blackOut, Color.clear, Color.black, 3f));
+        StartCoroutine(AudioandChangeScenes());
     }
 
     IEnumerator ChangeColor(Image blackout, Color from, Color to, float duration)
@@ -35,10 +36,14 @@ public class CutScene : MonoBehaviour
             t = timeElapsed / duration;
             blackOut.color = Color.Lerp(from, to, t);
             yield return null;
-            yield return new WaitForSeconds(2);
-            _audio.PlayOneShot(ambulance);
-            yield return new WaitForSeconds(5);
-            SceneManager.LoadScene("Tutorial_Level");
         }
+    }
+
+    IEnumerator AudioandChangeScenes()
+    {
+        yield return new WaitForSeconds(5);
+        _audio.PlayOneShot(ambulance);
+        yield return new WaitForSeconds(10);
+        SceneManager.LoadScene("Tutorial_Level");
     }
 }
