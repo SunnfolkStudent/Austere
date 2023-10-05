@@ -16,6 +16,8 @@ public class KarmaManager : MonoBehaviour
     public GameObject hellEnding;
     public GameObject limboEnding;
     public GameObject heavenEnding;
+
+    public Camera camera;
     
     public int karmaLevel = 0;
 
@@ -77,6 +79,8 @@ public class KarmaManager : MonoBehaviour
 
     private void EndingCheck()
     {
+        camera.transform.position = new Vector3(0, 0, -10);
+        
         if (karmaLevel >= 7)
         {
             hellEnding.gameObject.SetActive(true);
