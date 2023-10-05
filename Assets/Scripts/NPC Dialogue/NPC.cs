@@ -16,13 +16,11 @@ public class NPC : MonoBehaviour
    private float canTakeDamageCounter;
 
    private InputManager _input;
-   private PlayerAttack _karma;
    private AudioSource _as;
 
    private void Start()
    {
       _input = GetComponent<InputManager>();
-      _karma = GetComponent<PlayerAttack>();
       _as = GetComponent<AudioSource>();
       currentHealth = maxHealth;
    }

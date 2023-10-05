@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
             _rigidbody2D.velocity = _desiredVelocity;
         }
-        if (InputDialogueManager.playerControlsDisabled == true || DialogueManager.PlayerControlsDisabled == true)
+        if (InputDialogueManager.playerControlsDisabled == true || DialogueManager.PlayerControlsDisabled == true || BossDialogueManager.PlayerControlsDisabled == true)
         { 
             
             _rigidbody2D.velocity = Vector3.zero;
