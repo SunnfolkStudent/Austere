@@ -723,6 +723,10 @@ PrefabInstance:
       propertyPath: keyDrop
       value: 
       objectReference: {fileID: 8300000, guid: 08919d597b10c97429b315a811b6be75, type: 3}
+    - target: {fileID: 8194509574071802965, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: enemyGrowl
+      value: 
+      objectReference: {fileID: 8300000, guid: 66727d4130b51af4a872dce4af9367ed, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
