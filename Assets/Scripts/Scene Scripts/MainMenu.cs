@@ -11,6 +11,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Intro_Scene");
     }
 
+    public void Settings()
+    {
+        SceneManager.LoadScene("Controlles");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
