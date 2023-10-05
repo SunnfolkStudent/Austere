@@ -44,5 +44,6 @@ public class CutScene : MonoBehaviour
         _audio.PlayOneShot(ambulance);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Tutorial_Level");
+        yield return null;
     }
 }
