@@ -19,6 +19,8 @@ public class EnemyController : MonoBehaviour
     private float canTakeDamageTime = 1f;
     private float canTakeDamageCounter;
 
+    public GameObject enemy;
+
     private float distance;
     private Animator _anim;
     private Rigidbody2D _rb;
@@ -99,5 +101,6 @@ public class EnemyController : MonoBehaviour
         key.gameObject.SetActive(true);
         _as.PlayOneShot(keyDrop);
         Destroy(gameObject);
+        Destroy(enemy);
     }
 }
