@@ -20,18 +20,20 @@ public class CutScene : MonoBehaviour
 
     public void EndCutScene()
     {
-        StartCoroutine(ChangeColor());
+        StartCoroutine(ChangeColor(blackOut, Color.clear, Color.black, 3f));
         _audio.PlayOneShot(ambulance);
     }
 
-    IEnumerator ChangeColor()
+    IEnumerator ChangeColor(Image blackout, Color from, Color to, float duration)
     {
-        float alpha = 1.0f;
+        float timeElapsed = 0.0f;
 
-        while (alpha > 0.0f)
+        float t = 0.0f;
+        while (t < 1.0f)
         {
-            alpha -= fadeSpeed * Time.deltaTime;
-            blackOut.color = new Color(1, 1, 1, 1);
+            timeElapsed += Time.deltaTime;
+            t = timeElapsed / duration;
+            blackOut.color = Color.Lerp(from, to, t);
             yield return null;
         }
     }
