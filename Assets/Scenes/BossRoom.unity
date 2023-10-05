@@ -590,7 +590,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2348144297232368168, guid: e7c1131956def1a42b5f958f2d96d839, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 804915350}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8536065651619140294, guid: e7c1131956def1a42b5f958f2d96d839, type: 3}
       insertIndex: -1
@@ -1151,6 +1154,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 5c69c9f897e0c114fb0668cad94b43cf, type: 3}
   m_PrefabInstance: {fileID: 1075580575}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &804915349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804915350}
+  - component: {fileID: 804915352}
+  - component: {fileID: 804915351}
+  m_Layer: 5
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804915350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804915349}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1457824805}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &804915351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804915349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &804915352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804915349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &1075580575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2092,6 +2163,11 @@ MonoBehaviour:
   attackPressed: 0
   usingGamepad: 0
   usingDpad: 0
+--- !u!224 &1457824805 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2348144297232368168, guid: e7c1131956def1a42b5f958f2d96d839, type: 3}
+  m_PrefabInstance: {fileID: 358679005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1463396159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: bc794a697fe69f147ae0ddcca6390cca, type: 3}

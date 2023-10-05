@@ -203,6 +203,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1864134953252073706, guid: f760704d5b9e09b43a83d860bf3b5990, type: 3}
+      propertyPath: hellEnding
+      value: 
+      objectReference: {fileID: 149891548}
+    - target: {fileID: 1864134953252073706, guid: f760704d5b9e09b43a83d860bf3b5990, type: 3}
+      propertyPath: limboEnding
+      value: 
+      objectReference: {fileID: 2016864100}
+    - target: {fileID: 1864134953252073706, guid: f760704d5b9e09b43a83d860bf3b5990, type: 3}
+      propertyPath: heavenEnding
+      value: 
+      objectReference: {fileID: 818814346}
     - target: {fileID: 5408571883779650355, guid: f760704d5b9e09b43a83d860bf3b5990, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1229.7853
