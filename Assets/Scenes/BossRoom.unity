@@ -140,6 +140,10 @@ PrefabInstance:
       propertyPath: heavenBoss
       value: 
       objectReference: {fileID: 1199215094}
+    - target: {fileID: 1864134953252073706, guid: f760704d5b9e09b43a83d860bf3b5990, type: 3}
+      propertyPath: karmaLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5408571883779650355, guid: f760704d5b9e09b43a83d860bf3b5990, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.01
@@ -799,7 +803,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1445,8 +1449,6 @@ MonoBehaviour:
       So I ask you once again...
     - WHAT are you doing here?
     - ...
-    - ...
-    - ...
     - One of... VERY few words, I see.
     - Very well... One of your heart seems befitting of a new start.
     - Fuck right off to Heaven you go, you're not supposed to be this low.
@@ -1463,7 +1465,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1928,7 +1930,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0

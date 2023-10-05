@@ -43,8 +43,8 @@ public class PlayerInteraction : MonoBehaviour
         if (other.CompareTag("Key") && _input.interactHeld)
         {
             haveKey = true;
-            _audio.PlayOneShot(keyPickUp);
             Destroy(other.gameObject);
+            _audio.PlayOneShot(keyPickUp);
         }
         
         /*if (other.CompareTag("HelpText"))

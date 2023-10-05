@@ -16,6 +16,12 @@ public class KarmaManager : MonoBehaviour
     public GameObject hellEnding;
     public GameObject limboEnding;
     public GameObject heavenEnding;
+
+    public AudioClip hellSound;
+    public AudioClip limboSound;
+    public AudioClip heavenSound;
+
+    private AudioSource _audio;
     
     public int karmaLevel = 0;
 
@@ -26,8 +32,8 @@ public class KarmaManager : MonoBehaviour
 
     private void Start()
     {
+        _audio = GetComponent<AudioSource>();
         karmaLevel = PlayerPrefs.GetInt("Karma", 0);
-        Debug.Log("KarmaLevel: " + karmaLevel);
 
         if (SceneManager.GetActiveScene().name == "End_Scene")
         {
@@ -39,28 +45,24 @@ public class KarmaManager : MonoBehaviour
     {
         karmaLevel += 1;
         PlayerPrefs.SetInt("Karma", karmaLevel);
-        Debug.Log("KarmaLevel: " + karmaLevel);
     }
 
     public void AddBigKarma()
     {
         karmaLevel += 3;
         PlayerPrefs.SetInt("Karma", karmaLevel);
-        Debug.Log("KarmaLevel: " + karmaLevel);
     }
 
     public void ResetKarma()
     {
         karmaLevel = 0;
         PlayerPrefs.SetInt("Karma", karmaLevel);
-        Debug.Log("KarmaLevel: " + karmaLevel);
     }
     
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("hit player");
             if (karmaLevel >= 7)
             {
                 hellBoss.gameObject.SetActive(true);
@@ -80,16 +82,16 @@ public class KarmaManager : MonoBehaviour
         if (karmaLevel >= 7)
         {
             hellEnding.gameObject.SetActive(true);
-            Debug.Log("hellImage");
+            _audio.PlayOneShot(hellSound);
         }else if (karmaLevel >= 1)
         {
             limboEnding.gameObject.SetActive(true);
-            Debug.Log("limboImage");
+            _audio.PlayOneShot(limboSound);
         }
         else
         {
             heavenEnding.gameObject.SetActive(true);
-            Debug.Log("heavenImage");
+            _audio.PlayOneShot(heavenSound);
         }
     }
 }

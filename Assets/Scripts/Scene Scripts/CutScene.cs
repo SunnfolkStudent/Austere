@@ -44,7 +44,7 @@ public class CutScene : MonoBehaviour
     IEnumerator AudioandChangeScenes()
     {
         _audio.PlayOneShot(ambulance);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         //title.enabled = true;
         StartCoroutine(ChangeColorTitle(title, Color.black, new Color(1,1,1,1), 3f));
         yield return new WaitForSeconds(8);

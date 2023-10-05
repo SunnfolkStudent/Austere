@@ -307,7 +307,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1858,6 +1858,10 @@ PrefabInstance:
       propertyPath: 'leaves.Array.data[4]'
       value: 
       objectReference: {fileID: 300697532}
+    - target: {fileID: 1926735368093759878, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: Priority
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 4356931913774173108, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3730,7 +3734,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3986,7 +3990,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

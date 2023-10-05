@@ -22,8 +22,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Dialogue Start");
-        
         animator.SetBool("IsOpen", true);
         PlayerControlsDisabled = true;
 

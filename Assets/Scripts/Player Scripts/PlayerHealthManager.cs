@@ -13,7 +13,7 @@ public class PlayerHealthManager : MonoBehaviour
 
     [Header("IFrames")] 
     public bool canTakeDamage;
-    public float canTakeDamageTime = 0.8f;
+    public float canTakeDamageTime = 1f;
     public float canTakeDamageCounter;
 
     public AudioClip playerDamaged;
