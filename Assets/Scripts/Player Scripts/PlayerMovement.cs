@@ -29,6 +29,12 @@ public class PlayerMovement : MonoBehaviour
     {
         _desiredVelocity = _rigidbody2D.velocity;
         _rigidbody2D.velocity = _desiredVelocity;
+
+        if (_input.moveDirection.x != 0)
+        {
+            print("This is" + _input.moveDirection.x);
+            transform.localScale = new Vector3(_input.moveDirection.x, 1, 1);
+        }
     }
     
     private void FixedUpdate()
@@ -40,41 +46,38 @@ public class PlayerMovement : MonoBehaviour
                 _input.moveDirection.Normalize();
             }
 
+            if (_input.moveDirection != Vector2.zero)
+            {
+                _anim.Play("Player_Walk");
+                _anim.SetFloat("X", _input.moveDirection.x);
+                _anim.SetFloat("Y", _input.moveDirection.y);
+            }
+            else
+            {
+                _anim.Play("Player_Idle"); 
+            }
+            
+            // direction = animation
             if (_input.moveDirection.x != 0)
             {
                 _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x,
                     moveSpeed * _input.moveDirection.x, accelerationTime);
-                _anim.Play("Player_SideWalk");
-
-                _sr.transform.localScale = new Vector2(_input.moveDirection.x > 0 ? 1 : -1, 1);
             }
             else
             {
                 _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 0f, groundFriction);
             }
-
-            if (_input.moveDirection.y != 0f)
+            
+            if(_input.moveDirection.y != 0)
             {
                 _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y,
                     moveSpeed * _input.moveDirection.y, accelerationTime);
-                if (_rigidbody2D.velocity.y > 0.01f)
-                {
-                    _anim.Play("Player_UpWalk");
-                }
-                else
-                {
-                    _anim.Play("Player_DownWalk");
-                }
             }
             else
             {
                 _desiredVelocity.y = Mathf.Lerp(_desiredVelocity.y, 0f, groundFriction);
             }
-
-            if (_input.moveDirection.x == 0f && _input.moveDirection.y == 0f)
-            {
-                _anim.Play("Player_Idle");
-            }
+            
 
             _rigidbody2D.velocity = _desiredVelocity;
         }
