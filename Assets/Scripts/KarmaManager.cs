@@ -13,9 +13,9 @@ public class KarmaManager : MonoBehaviour
     public GameObject limboBoss;
     public GameObject hellBoss;
 
-    public Image hellEnding;
-    public Image limboEnding;
-    public Image heavenEnding;
+    public GameObject hellEnding;
+    public GameObject limboEnding;
+    public GameObject heavenEnding;
     
     public int karmaLevel = 0;
 
@@ -79,14 +79,17 @@ public class KarmaManager : MonoBehaviour
     {
         if (karmaLevel >= 5)
         {
-            hellEnding.enabled = true;
+            hellEnding.gameObject.SetActive(true);
+            Debug.Log("hellImage");
         }else if (karmaLevel >= 1)
         {
-            limboEnding.enabled = true;
+            limboEnding.gameObject.SetActive(true);
+            Debug.Log("limboImage");
         }
         else
         {
-            heavenEnding.enabled = true;
+            heavenEnding.gameObject.SetActive(true);
+            Debug.Log("heavenImage");
         }
     }
 }
