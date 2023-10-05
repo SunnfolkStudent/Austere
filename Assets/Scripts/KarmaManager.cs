@@ -49,6 +49,7 @@ public class KarmaManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("hit player");
             if (karmaLevel >= 5)
             {
                 hellBoss.gameObject.SetActive(true);
