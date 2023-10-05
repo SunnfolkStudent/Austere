@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     public GameObject key;
 
     public AudioClip keyDrop;
+    public AudioClip enemyGrowl;
 
     private bool canTakeDamage;
     private float canTakeDamageTime = 0.02f;
@@ -51,6 +52,7 @@ public class EnemyController : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             if (distance < 2)
             {
+                _as.PlayOneShot(enemyGrowl);
                 EnemyMove();
             }
     }
