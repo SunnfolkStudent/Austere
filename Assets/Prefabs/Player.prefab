@@ -161,7 +161,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!70 &565558823342209858
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -345,7 +345,6 @@ MonoBehaviour:
   canAttack: 0
   isAttacking: 0
   attackCircle: {fileID: 2499529121675452406}
-  badKarma: 0
 --- !u!82 &1926735368093759878
 AudioSource:
   m_ObjectHideFlags: 0
