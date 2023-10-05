@@ -21,6 +21,7 @@ public class Boss : MonoBehaviour
        {
           if (other.CompareTag("Player") && _input.interactHeld)
           {
+             Debug.Log("Talking to em");
              TriggerDialogue();
              _as.PlayOneShot(bossNoise);
           }
