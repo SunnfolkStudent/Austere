@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
     public AudioClip enemyGrowl;
 
     private bool canTakeDamage;
-    private float canTakeDamageTime = 0.02f;
+    private float canTakeDamageTime = 1f;
     private float canTakeDamageCounter;
 
     private float distance;
