@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class KarmaManager : MonoBehaviour
 {
@@ -10,6 +12,10 @@ public class KarmaManager : MonoBehaviour
     public GameObject heavenBoss;
     public GameObject limboBoss;
     public GameObject hellBoss;
+
+    public Image hellEnding;
+    public Image limboEnding;
+    public Image heavenEnding;
     
     public int karmaLevel = 0;
 
@@ -22,6 +28,11 @@ public class KarmaManager : MonoBehaviour
     {
         karmaLevel = PlayerPrefs.GetInt("Karma", 0);
         Debug.Log("KarmaLevel: " + karmaLevel);
+
+        if (SceneManager.GetActiveScene().name == "End_Scene")
+        {
+            EndingCheck();
+        }
     }
 
     public void AddSmallKarma()
@@ -61,6 +72,21 @@ public class KarmaManager : MonoBehaviour
             {
                 heavenBoss.gameObject.SetActive(true);
             }
+        }
+    }
+
+    private void EndingCheck()
+    {
+        if (karmaLevel >= 5)
+        {
+            hellEnding.enabled = true;
+        }else if (karmaLevel >= 1)
+        {
+            limboEnding.enabled = true;
+        }
+        else
+        {
+            heavenEnding.enabled = true;
         }
     }
 }
