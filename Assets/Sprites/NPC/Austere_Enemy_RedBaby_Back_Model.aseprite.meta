@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8a7a203f8cfa7946a2b0f7fdfeffc4d
+guid: f4c79c7c0414293499d476b1eb457756
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Austere_Enemy_RedBaby_Walk (1)_Frame_0
+  - name: Austere_Enemy_RedBaby_Back_Model
     originalName: 
-    pivot: {x: 0.59130436, y: -0.16129033}
+    pivot: {x: 0.52272725, y: -0.16393442}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 115
-      height: 62
-    spriteID: 2c0b2f7318c7d8b40b8f8bed14d4ac1e
+      width: 44
+      height: 61
+    spriteID: bb7a0674139742c43b2e5ea7f861df98
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,107 +139,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Austere_Enemy_RedBaby_Walk (1)_Frame_1
-    originalName: 
-    pivot: {x: 0.5948276, y: -0.16393442}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 127
-      y: 4
-      width: 116
-      height: 61
-    spriteID: 6ace32e06229dc1458453c77381524dc
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 127, y: 4}
-  - name: Austere_Enemy_RedBaby_Walk (1)_Frame_2
-    originalName: 
-    pivot: {x: 0.59130436, y: -0.16393442}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 74
-      width: 115
-      height: 61
-    spriteID: b1cccb496e9ec6d4ebe949e1327ad1b9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 74}
-  - name: Austere_Enemy_RedBaby_Walk (1)_Frame_3
-    originalName: 
-    pivot: {x: 0.59130436, y: -0.16393442}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 143
-      width: 115
-      height: 61
-    spriteID: a6b663f5c355f6449a0c6ec4d9a8cb69
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 143}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1054876890
-    name: Austere_Enemy_RedBaby_Walk (1)
+    guid: -976402652
+    name: Austere_Enemy_RedBaby_Back_Model
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Austere_Enemy_RedBaby_Walk (1)_Frame_0
+    - name: Austere_Enemy_RedBaby_Back_Model
       frameIndex: 0
       cellRect:
-        x: 13
+        x: 37
         y: 10
-        width: 115
-        height: 62
-      spriteId: 2c0b2f7318c7d8b40b8f8bed14d4ac1e
-    - name: Austere_Enemy_RedBaby_Walk (1)_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 12
-        y: 10
-        width: 116
+        width: 44
         height: 61
-      spriteId: 6ace32e06229dc1458453c77381524dc
-    - name: Austere_Enemy_RedBaby_Walk (1)_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 13
-        y: 10
-        width: 115
-        height: 61
-      spriteId: b1cccb496e9ec6d4ebe949e1327ad1b9
-    - name: Austere_Enemy_RedBaby_Walk (1)_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 13
-        y: 10
-        width: 115
-        height: 61
-      spriteId: a6b663f5c355f6449a0c6ec4d9a8cb69
+      spriteId: bb7a0674139742c43b2e5ea7f861df98
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -267,4 +183,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 162, y: 86}
+  canvasSize: {x: 120, y: 81}
