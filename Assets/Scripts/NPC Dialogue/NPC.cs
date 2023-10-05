@@ -10,6 +10,7 @@ public class NPC : MonoBehaviour
    public int currentHealth;
 
    public AudioClip ghostSigh;
+   public AudioClip ghostHurt;
 
    private bool canTakeDamage;
    private float canTakeDamageTime = 0.02f;
@@ -60,6 +61,7 @@ public class NPC : MonoBehaviour
    public void TakeDamage()
    {
       currentHealth -= 1;
+      _as.PlayOneShot(ghostHurt);
 
       if (currentHealth <= 0)
       {
