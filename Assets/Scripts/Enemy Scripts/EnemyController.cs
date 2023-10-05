@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EnemyController : MonoBehaviour
 {
     public GameObject player;
-    public float speed;
+    public float speed = 0.25f;
 
     public int maxHealth = 3;
     public int currentHealth;
@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
     private float canTakeDamageCounter;
 
     private float distance;
-    private KarmaManager _karma;
+    private PlayerAttack _karma;
     private Animator _anim;
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
@@ -28,13 +28,13 @@ public class EnemyController : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-        _karma = GetComponent<KarmaManager>();
+        _karma = GetComponent<PlayerAttack>();
         _anim = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _sr = GetComponent<SpriteRenderer>();
         _as = GetComponent<AudioSource>();
         key.gameObject.SetActive(false);
-        speed = 1f;
+        speed = 0.25f;
     }
 
     private void Update()
@@ -89,8 +89,8 @@ public class EnemyController : MonoBehaviour
         currentHealth -= 1;
         if (currentHealth <= 0)
         {
+            _karma.SmallKarma();
             Die();
-            _karma.karmaLevel -= 1;
         }
     }
 

@@ -16,13 +16,13 @@ public class NPC : MonoBehaviour
    private float canTakeDamageCounter;
 
    private InputManager _input;
-   private KarmaManager _karma;
+   private PlayerAttack _karma;
    private AudioSource _as;
 
    private void Start()
    {
       _input = GetComponent<InputManager>();
-      _karma = GetComponent<KarmaManager>();
+      _karma = GetComponent<PlayerAttack>();
       _as = GetComponent<AudioSource>();
       currentHealth = maxHealth;
    }
@@ -65,8 +65,8 @@ public class NPC : MonoBehaviour
 
       if (currentHealth <= 0)
       {
+         _karma.BigKarma();
          Destroy(gameObject);
-         _karma.karmaLevel -= 3;
       }
    }
 }
