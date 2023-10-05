@@ -13,8 +13,10 @@ public class PlayerInteraction : MonoBehaviour
     //public GameObject helpText;
     public int sceneBuildIndex;
     public GameObject uiKey;
+    public AudioClip keyPickUp;
 
     private InputManager _input;
+    private AudioSource _audio;
 
     private void Start()
     {
@@ -22,6 +24,11 @@ public class PlayerInteraction : MonoBehaviour
         //interactHelp.gameObject.SetActive(false);
         haveKey = false;
         uiKey.gameObject.SetActive(false);
+        
+        if (SceneManager.GetActiveScene().name == "Tutorial_Level")
+        {
+            haveKey = true;
+        }
     }
 
     private void Update()
@@ -41,6 +48,7 @@ public class PlayerInteraction : MonoBehaviour
         if (other.CompareTag("Key") && _input.interactHeld)
         {
             haveKey = true;
+            _audio.PlayOneShot(keyPickUp);
             Destroy(other.gameObject);
         }
         
