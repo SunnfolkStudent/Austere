@@ -9,7 +9,6 @@ public class CutScene : MonoBehaviour
 {
     public AudioClip ambulance;
     public Image blackOut;
-    public float fadeSpeed = 20f;
 
     private AudioSource _audio;
 
@@ -41,9 +40,9 @@ public class CutScene : MonoBehaviour
 
     IEnumerator AudioandChangeScenes()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         _audio.PlayOneShot(ambulance);
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene("Tutorial_Level");
     }
 }
