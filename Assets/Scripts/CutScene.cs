@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CutScene : MonoBehaviour
 {
@@ -21,7 +22,6 @@ public class CutScene : MonoBehaviour
     public void EndCutScene()
     {
         StartCoroutine(ChangeColor(blackOut, Color.clear, Color.black, 3f));
-        _audio.PlayOneShot(ambulance);
     }
 
     IEnumerator ChangeColor(Image blackout, Color from, Color to, float duration)
@@ -34,7 +34,10 @@ public class CutScene : MonoBehaviour
             timeElapsed += Time.deltaTime;
             t = timeElapsed / duration;
             blackOut.color = Color.Lerp(from, to, t);
-            yield return null;
+            yield return new WaitForSeconds(2);
+            _audio.PlayOneShot(ambulance);
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Tutorial_Level");
         }
     }
 }
