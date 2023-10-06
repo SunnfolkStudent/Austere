@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -36,7 +37,8 @@ public class PlayerHealthManager : MonoBehaviour
         
         if (SceneManager.GetActiveScene().name == "Tutorial_Level")
         {
-            lives = 1;
+            lives = 0;
+            Down();
         }
     }
 
