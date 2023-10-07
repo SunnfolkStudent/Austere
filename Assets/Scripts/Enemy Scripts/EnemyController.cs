@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
 {
     public GameObject player;
     public float speed = 0.25f;
+    public float attackDistance = 2;
 
     public int maxHealth = 3;
     public int currentHealth;
@@ -36,7 +37,6 @@ public class EnemyController : MonoBehaviour
         _sr = GetComponent<SpriteRenderer>();
         _as = GetComponent<AudioSource>();
         key.gameObject.SetActive(false);
-        speed = 0.25f;
         original = _sr.color;
     }
 
@@ -52,7 +52,7 @@ public class EnemyController : MonoBehaviour
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            if (distance < 2)
+            if (distance < attackDistance)
             {
                 _as.PlayOneShot(enemyGrowl);
                 EnemyMove();
