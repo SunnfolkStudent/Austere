@@ -900,6 +900,10 @@ PrefabInstance:
       propertyPath: 'leaves.Array.data[4]'
       value: 
       objectReference: {fileID: 1402442671}
+    - target: {fileID: 1926735368093759878, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4356931913774173108, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: m_Name
       value: Player
