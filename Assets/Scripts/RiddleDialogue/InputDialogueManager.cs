@@ -99,4 +99,16 @@ public class InputDialogueManager : MonoBehaviour
         }
         
     }
+
+    /*IEnumerator ClearText()
+    {
+        while (true)
+        {
+            Debug.Log("Clear text");
+            inputField.TMP_Text.text = "A line of text.";
+            yield return new WaitForSeconds(1.0f);
+            inputField.GetComponent<TMP_Text>().text = string.Empty;
+            yield return new WaitForSeconds(1.0f);
+        }
+    }*/
 }
