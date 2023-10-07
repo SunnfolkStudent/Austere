@@ -1120,6 +1120,10 @@ PrefabInstance:
       propertyPath: 'leaves.Array.data[4]'
       value: 
       objectReference: {fileID: 1172062614}
+    - target: {fileID: 1926735368093759878, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2177431522363817271, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -2131,7 +2135,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
