@@ -1750,6 +1750,10 @@ PrefabInstance:
       propertyPath: 'leaves.Array.data[4]'
       value: 
       objectReference: {fileID: 612147700}
+    - target: {fileID: 1926735368093759878, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2177431522363817271, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: m_SortingOrder
       value: 1

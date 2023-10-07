@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: 'leaves.Array.data[4]'
       value: 
       objectReference: {fileID: 483918083}
+    - target: {fileID: 1926735368093759878, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2177431522363817271, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -720,7 +724,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1051,7 +1055,6 @@ MonoBehaviour:
   key: {fileID: 78390279}
   keyDrop: {fileID: 8300000, guid: 08919d597b10c97429b315a811b6be75, type: 3}
   enemyGrowl: {fileID: 8300000, guid: 932df3ef685c35d49a396b9f433d347a, type: 3}
-  enemy: {fileID: 738108250}
 --- !u!50 &738108252
 Rigidbody2D:
   serializedVersion: 4
@@ -1113,8 +1116,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.06429872, y: 0.4374128}
-  m_Size: {x: 0.7019872, y: 1.8296088}
+  m_Offset: {x: -0.03252101, y: 0.4374128}
+  m_Size: {x: 0.9985757, y: 1.8296088}
   m_Direction: 0
 --- !u!95 &738108254
 Animator:
@@ -1442,7 +1445,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.02343762, y: 1.0001916}
+  m_Offset: {x: -0.02343762, y: 0.9761586}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5069445, y: -0.040816326}
@@ -1452,7 +1455,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.375, y: 1.1854932}
+  m_Size: {x: 3.375, y: 1.1374273}
   m_EdgeRadius: 0
 --- !u!58 &1248516285
 CircleCollider2D:
