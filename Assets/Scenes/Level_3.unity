@@ -671,6 +671,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 67480067087188763, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_Size.x
+      value: 0.86031294
+      objectReference: {fileID: 0}
+    - target: {fileID: 67480067087188763, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5435765
+      objectReference: {fileID: 0}
+    - target: {fileID: 67480067087188763, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05253482
+      objectReference: {fileID: 0}
+    - target: {fileID: 67480067087188763, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.4398178
+      objectReference: {fileID: 0}
+    - target: {fileID: 67480067087188763, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 67480067087188763, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2875282856816344953, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.03
@@ -738,6 +762,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7155812959730191175, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1114737079}
+    - targetCorrespondingSourceObject: {fileID: 7155812959730191175, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1114737080}
   m_SourcePrefab: {fileID: 100100000, guid: b49a449974ecf0d4ab0129744c841680, type: 3}
 --- !u!1 &1114737078 stripped
 GameObject:
@@ -840,6 +867,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &1114737080
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114737078}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.08136964, y: 0.40174776}
+  m_Radius: 0.30078053
 --- !u!1001 &1172062612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1161,8 +1224,7 @@ MonoBehaviour:
   dialogue:
     name: Riddle Mirror
     sentences:
-    - People make me, save me, change me and raise me.
-    - 'What am I?
+    - 'People make me, save me, change me and raise me. What am I?
 
 '
 --- !u!61 &1392028509
