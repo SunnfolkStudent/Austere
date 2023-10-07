@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
    public AudioClip ghostHurt;
 
    public GameObject key;
+   public bool hasKey;
 
    private bool canTakeDamage;
    private float canTakeDamageTime = 0.02f;
@@ -68,9 +69,17 @@ public class NPC : MonoBehaviour
 
       if (currentHealth <= 0)
       {
-         key.gameObject.SetActive(true);
-         KarmaManager.instance.AddBigKarma();
-         Destroy(gameObject);
+         if (hasKey == true)
+         {
+            key.gameObject.SetActive(true);
+         }
+         Die();
       }
+   }
+   
+   public void Die()
+   {
+      KarmaManager.instance.AddBigKarma();
+      Destroy(gameObject);
    }
 }
