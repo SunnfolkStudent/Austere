@@ -17,6 +17,9 @@ public class PlayerHealthManager : MonoBehaviour
     public float canTakeDamageTime = 2f;
     public float canTakeDamageCounter;
 
+    public GameObject standingCol;
+    public GameObject downCol;
+
     public AudioClip playerDamaged;
     public AudioClip playerHealed;
 
@@ -67,6 +70,8 @@ public class PlayerHealthManager : MonoBehaviour
             if (lives >= maxLives) return;
             lives += 1;
             isDown = false;
+            standingCol.gameObject.SetActive(true);
+            downCol.gameObject.SetActive(false);
             _playerMovement.moveSpeed = 2f;
             //up animation
             _playerAttack.canAttack = true;
@@ -109,5 +114,7 @@ public class PlayerHealthManager : MonoBehaviour
         //down animation
         _playerAttack.canAttack = false;
         canTakeDamage = false;
+        downCol.gameObject.SetActive(true);
+        standingCol.gameObject.SetActive(false);
     }
 }
