@@ -26,6 +26,7 @@ public class NPC : MonoBehaviour
       _input = GetComponent<InputManager>();
       _as = GetComponent<AudioSource>();
       currentHealth = maxHealth;
+      key.gameObject.SetActive(false);
    }
 
    private void Update()
