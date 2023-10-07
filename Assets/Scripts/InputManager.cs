@@ -12,7 +12,7 @@ public class InputManager : MonoBehaviour
 
 // These variables are used to hold Input Values from the F key or East Button
     [HideInInspector]
-    public bool interactPressed, interactReleased, interactHeld, enterPressed, escPressed, attackPressed;
+    public bool interactPressed, interactReleased, interactHeld, enterHeld, escPressed, attackPressed;
 
 // These variables are used to determine input source.
     [SerializeField] private bool usingGamepad, usingDpad;
@@ -51,7 +51,7 @@ public class InputManager : MonoBehaviour
         interactReleased = _keyboard.fKey.wasReleasedThisFrame;
         interactHeld = _keyboard.fKey.isPressed;
         // Set enter to give answer
-        enterPressed = _keyboard.enterKey.wasPressedThisFrame;
+        enterHeld = _keyboard.enterKey.isPressed;
         //escape for leaving dialogue and pause menu
         escPressed = _keyboard.escapeKey.wasPressedThisFrame;
         // e to attack
