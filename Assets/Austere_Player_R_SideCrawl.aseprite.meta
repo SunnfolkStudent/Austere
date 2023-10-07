@@ -1,0 +1,438 @@
+fileFormatVersion: 2
+guid: 651ca2d3f8f883147b2b91845c5823ca
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 64
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638322717382289848
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Austere_Player_R_SideCrawl_Frame_0
+    originalName: 
+    pivot: {x: 0.53, y: 0.5208333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 50
+      height: 24
+    spriteID: 4c15e49b51049b245819c272ba2be2f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Austere_Player_R_SideCrawl_Frame_1
+    originalName: 
+    pivot: {x: 0.53, y: 0.54347825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 100
+      width: 50
+      height: 23
+    spriteID: b56d2784dd4d4a3418a8e30517acf055
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 100}
+  - name: Austere_Player_R_SideCrawl_Frame_2
+    originalName: 
+    pivot: {x: 0.53, y: 0.54347825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 131
+      width: 50
+      height: 23
+    spriteID: 422ff29fd401d8947b865d7c23211d5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 131}
+  - name: Austere_Player_R_SideCrawl_Frame_3
+    originalName: 
+    pivot: {x: 0.53, y: 0.54347825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 162
+      width: 50
+      height: 23
+    spriteID: e642902a7003f9f49b89f15fe9c5db09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 162}
+  - name: Austere_Player_R_SideCrawl_Frame_4
+    originalName: 
+    pivot: {x: 0.53, y: 0.5208333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 36
+      width: 50
+      height: 24
+    spriteID: 2a8aae6306b505b40a4ae3d3305ab72a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 36}
+  - name: Austere_Player_R_SideCrawl_Frame_5
+    originalName: 
+    pivot: {x: 0.53, y: 0.5208333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 50
+      height: 24
+    spriteID: 060d83585d47cbc4fb74a9defc1fac75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 68}
+  - name: Austere_Player_R_SideCrawl_Frame_6
+    originalName: 
+    pivot: {x: 0.53, y: 0.54347825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 193
+      width: 50
+      height: 23
+    spriteID: 9b2987071e74bdf42980d194d2f4e871
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 193}
+  - name: Austere_Player_R_SideCrawl_Frame_7
+    originalName: 
+    pivot: {x: 0.53, y: 0.54347825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 50
+      height: 23
+    spriteID: b41f9832922612247a1c89caeaebd4e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: Austere_Player_R_SideCrawl_Frame_8
+    originalName: 
+    pivot: {x: 0.53, y: 0.54347825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 4
+      width: 50
+      height: 23
+    spriteID: eca923805586c1e4198962c06e0b7197
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 4}
+  - name: Austere_Player_R_SideCrawl_Frame_9
+    originalName: 
+    pivot: {x: 0.51, y: 0.54347825}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 35
+      width: 50
+      height: 23
+    spriteID: 91af0be358e25974880246fe393315d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 35}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1191613209
+    name: Austere_Player_R_SideCrawl
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Austere_Player_R_SideCrawl_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 24
+      spriteId: 4c15e49b51049b245819c272ba2be2f0
+    - name: Austere_Player_R_SideCrawl_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 23
+      spriteId: b56d2784dd4d4a3418a8e30517acf055
+    - name: Austere_Player_R_SideCrawl_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 23
+      spriteId: 422ff29fd401d8947b865d7c23211d5c
+    - name: Austere_Player_R_SideCrawl_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 23
+      spriteId: e642902a7003f9f49b89f15fe9c5db09
+    - name: Austere_Player_R_SideCrawl_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 24
+      spriteId: 2a8aae6306b505b40a4ae3d3305ab72a
+    - name: Austere_Player_R_SideCrawl_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 24
+      spriteId: 060d83585d47cbc4fb74a9defc1fac75
+    - name: Austere_Player_R_SideCrawl_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 23
+      spriteId: 9b2987071e74bdf42980d194d2f4e871
+    - name: Austere_Player_R_SideCrawl_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 23
+      spriteId: b41f9832922612247a1c89caeaebd4e8
+    - name: Austere_Player_R_SideCrawl_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 6
+        y: 6
+        width: 50
+        height: 23
+      spriteId: eca923805586c1e4198962c06e0b7197
+    - name: Austere_Player_R_SideCrawl_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 7
+        y: 6
+        width: 50
+        height: 23
+      spriteId: 91af0be358e25974880246fe393315d2
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 65, y: 37}

@@ -1391,7 +1391,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: bf55a9b9e8ff2ad438842aafcc498980, type: 3}
     - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[0]'
@@ -1399,9 +1399,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: 'dialogue.sentences.Array.data[1]'
-      value: 'Usually, the only one who talks to me is the mirror...
+      value: 'Usually, the only one who talks to me is the mirror.
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
+      propertyPath: 'dialogue.sentences.Array.data[2]'
+      value: Last time, it even gave me a key!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
