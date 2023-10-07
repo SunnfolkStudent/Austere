@@ -951,7 +951,7 @@ PrefabInstance:
     - target: {fileID: 6039505676700656994, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: keyPickUp
       value: 
-      objectReference: {fileID: 8300000, guid: 08919d597b10c97429b315a811b6be75, type: 3}
+      objectReference: {fileID: 8300000, guid: 4f60941edaea0ae459e96af2e36fd1bd, type: 3}
     - target: {fileID: 6039505676700656994, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: sceneBuildIndex
       value: 3
