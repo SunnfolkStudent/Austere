@@ -1309,7 +1309,7 @@ MonoBehaviour:
   interactPressed: 0
   interactReleased: 0
   interactHeld: 0
-  enterPressed: 0
+  enterHeld: 0
   escPressed: 0
   attackPressed: 0
   usingGamepad: 0
@@ -2135,7 +2135,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
