@@ -73,9 +73,4 @@ public class NPC : MonoBehaviour
          Destroy(gameObject);
       }
    }
-
-   /*IEnumerator(HurtFlash)
-   {
-      
-   }*/
 }

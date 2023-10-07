@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -19,7 +20,7 @@ public class EnemyController : MonoBehaviour
     private float canTakeDamageTime = 1f;
     private float canTakeDamageCounter;
 
-    public GameObject enemy;
+    private Color original;
 
     private float distance;
     private Animator _anim;
@@ -36,6 +37,7 @@ public class EnemyController : MonoBehaviour
         _as = GetComponent<AudioSource>();
         key.gameObject.SetActive(false);
         speed = 0.25f;
+        original = _sr.color;
     }
 
     private void Update()
@@ -88,6 +90,7 @@ public class EnemyController : MonoBehaviour
 
     public void TakeDamage()
     {
+        StartCoroutine(hurtFlash());
         currentHealth -= 1;
         if (currentHealth <= 0)
         {
@@ -101,6 +104,12 @@ public class EnemyController : MonoBehaviour
         key.gameObject.SetActive(true);
         _as.PlayOneShot(keyDrop);
         Destroy(gameObject);
-        Destroy(enemy);
+    }
+
+    IEnumerator hurtFlash()
+    {
+        _sr.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        _sr.color = original;
     }
 }
