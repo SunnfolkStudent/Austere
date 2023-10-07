@@ -50,7 +50,7 @@ public class CutScene : MonoBehaviour
         yield return new WaitForSeconds(3);
         //title.enabled = true;
         //StartCoroutine(ChangeColorTitle(title, Color.black, new Color(1,1,1,1), 3f));
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(6);
         SceneManager.LoadScene("Tutorial_Level");
         yield return null;
     }

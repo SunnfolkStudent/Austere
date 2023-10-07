@@ -61,18 +61,21 @@ public class KarmaManager : MonoBehaviour
     
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (SceneManager.GetActiveScene().name == "BossRoom")
         {
-            if (karmaLevel >= 5)
+            if (other.CompareTag("Player"))
             {
-                hellBoss.gameObject.SetActive(true);
-            }else if (karmaLevel >= 1)
-            {
-                limboBoss.gameObject.SetActive(true);
-            }
-            else
-            {
-                heavenBoss.gameObject.SetActive(true);
+                if (karmaLevel >= 5)
+                {
+                    hellBoss.gameObject.SetActive(true);
+                }else if (karmaLevel >= 1)
+                {
+                    limboBoss.gameObject.SetActive(true);
+                }
+                else
+                {
+                    heavenBoss.gameObject.SetActive(true);
+                }
             }
         }
     }
