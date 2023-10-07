@@ -383,6 +383,8 @@ MonoBehaviour:
   canTakeDamage: 0
   canTakeDamageTime: 0.2
   canTakeDamageCounter: 0
+  standingCol: {fileID: 1578872880669550051}
+  downCol: {fileID: 4094849841548815853}
   playerDamaged: {fileID: 8300000, guid: 7b3fe61c16977bd45a558f2e6ec2db1a, type: 3}
   playerHealed: {fileID: 8300000, guid: 83533d0fa56217e49b26e4241377c069, type: 3}
   leaves:
@@ -466,7 +468,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 75
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
