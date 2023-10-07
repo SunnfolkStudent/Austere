@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2230726614099606857}
   m_Layer: 7
   m_Name: StandingCollision
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 7108755325494082930}
   m_Layer: 7
   m_Name: LyingCollision
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8117527033558826032, guid: 0820836f3ed788e4a91943c11d1a0aa1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   haveKey: 0
-  sceneBuildIndex: 7
+  sceneBuildIndex: 6
   uiKey: {fileID: 0}
   keyPickUp: {fileID: 8300000, guid: 4f60941edaea0ae459e96af2e36fd1bd, type: 3}
 --- !u!114 &279638071089546510
