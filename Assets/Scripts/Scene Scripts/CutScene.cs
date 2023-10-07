@@ -61,7 +61,7 @@ public class CutScene : MonoBehaviour
 
         float t = 0.0f;
 
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(3);
         
         title.color = new Color(1, 1, 1, 1);
         

@@ -63,7 +63,7 @@ public class KarmaManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (karmaLevel >= 7)
+            if (karmaLevel >= 5)
             {
                 hellBoss.gameObject.SetActive(true);
             }else if (karmaLevel >= 1)
@@ -79,7 +79,7 @@ public class KarmaManager : MonoBehaviour
 
     private void EndingCheck()
     {
-        if (karmaLevel >= 7)
+        if (karmaLevel >= 5)
         {
             hellEnding.gameObject.SetActive(true);
             _audio.PlayOneShot(hellSound);

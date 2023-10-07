@@ -34,11 +34,15 @@ public class PlayerHealthManager : MonoBehaviour
         _playerMovement = GetComponent<PlayerMovement>();
         _playerAttack = GetComponent<PlayerAttack>();
         _as = GetComponent<AudioSource>();
+
+        if (lives == 0)
+        {
+            Down();
+        }
         
         if (SceneManager.GetActiveScene().name == "Tutorial_Level")
         {
             lives = 0;
-            Down();
         }
     }
 

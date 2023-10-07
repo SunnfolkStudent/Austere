@@ -21,6 +21,7 @@ public class PlayerInteraction : MonoBehaviour
     private void Start()
     {
         _input = GetComponent<InputManager>();
+        _audio = GetComponent<AudioSource>();
         //interactHelp.gameObject.SetActive(false);
         haveKey = false;
         uiKey.gameObject.SetActive(false);
