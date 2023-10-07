@@ -39,6 +39,11 @@ public class InputDialogueManager : MonoBehaviour
         {
             EndDialogue();
         }
+
+        if (_inputManager.enterHeld)
+        {
+            DisplayNextSentence();
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
