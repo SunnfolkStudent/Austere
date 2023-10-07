@@ -42,6 +42,10 @@ public class PlayerHealthManager : MonoBehaviour
         {
             Down();
         }
+        else
+        {
+            Up();
+        }
         
         if (SceneManager.GetActiveScene().name == "Tutorial_Level")
         {
@@ -69,14 +73,8 @@ public class PlayerHealthManager : MonoBehaviour
         {
             if (lives >= maxLives) return;
             lives += 1;
-            isDown = false;
-            standingCol.gameObject.SetActive(true);
-            downCol.gameObject.SetActive(false);
-            _playerMovement.moveSpeed = 2f;
-            //up animation
-            _playerAttack.canAttack = true;
-            canTakeDamage = true;
             _as.PlayOneShot(playerHealed);
+            Up();
         }
         if (canTakeDamage && other.gameObject.CompareTag("Enemy"))
         {
@@ -116,5 +114,15 @@ public class PlayerHealthManager : MonoBehaviour
         canTakeDamage = false;
         downCol.gameObject.SetActive(true);
         standingCol.gameObject.SetActive(false);
+    }
+
+    private void Up()
+    {
+        isDown = false;
+        standingCol.gameObject.SetActive(true);
+        downCol.gameObject.SetActive(false);
+        _playerAttack.canAttack = true;
+        canTakeDamage = true;
+        _playerMovement.moveSpeed = 2f;
     }
 }
