@@ -1164,6 +1164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyDrop
       objectReference: {fileID: 0}
+    - target: {fileID: 6462420092545913438, guid: a4c9913ee5396cb4cb72c19646e00162, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7492292331791390498, guid: a4c9913ee5396cb4cb72c19646e00162, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.08
