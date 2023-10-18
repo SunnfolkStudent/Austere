@@ -52,10 +52,6 @@ public class PlayerHealthManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Tutorial_Level")
         {
             lives = 0;
-            if (lives == 5)
-            {
-                tutorialKey.gameObject.SetActive(true);
-            }
         }
     }
 
@@ -71,6 +67,14 @@ public class PlayerHealthManager : MonoBehaviour
         for (int i = 0; i < leaves.Length; i++)
         {
             leaves[i].color = i < lives ? new Color(1, 1, 1, 1) : new Color(1, 1, 1, 0);
+        }
+
+        if (SceneManager.GetActiveScene().name == "Tutorial_Level")
+        {
+            if (lives == 5)
+            {
+                tutorialKey.gameObject.SetActive(true);
+            }
         }
     }
     private void OnTriggerStay2D(Collider2D other)
