@@ -26,6 +26,8 @@ public class PlayerHealthManager : MonoBehaviour
     [Header("HealthBar")] 
     public Image[] leaves;
 
+    public GameObject tutorialKey;
+
     private PlayerMovement _playerMovement;
     private PlayerAttack _playerAttack;
     private AudioSource _as;
@@ -50,6 +52,10 @@ public class PlayerHealthManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Tutorial_Level")
         {
             lives = 0;
+            if (lives == 5)
+            {
+                tutorialKey.gameObject.SetActive(true);
+            }
         }
     }
 

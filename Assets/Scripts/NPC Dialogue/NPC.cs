@@ -42,6 +42,7 @@ public class NPC : MonoBehaviour
    {
       if (other.CompareTag("Player") && _input.interactHeld)
       {
+         _input.isPlaying = false;
          TriggerDialogue();
          _as.PlayOneShot(ghostSigh);
       }

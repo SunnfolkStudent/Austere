@@ -14,10 +14,13 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     
     private Queue<string> sentences;
+
+    private InputManager _input;
     
     void Start()
     {
         sentences = new Queue<string>();
+        _input = GetComponent<InputManager>();
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -62,6 +65,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        _input.isPlaying = true;
         animator.SetBool("IsOpen", false);
         PlayerControlsDisabled = false;
     }

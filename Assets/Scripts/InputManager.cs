@@ -21,11 +21,14 @@ public class InputManager : MonoBehaviour
     private Keyboard _keyboard;
     private Gamepad _gamepad;
 
+    public bool isPlaying;
+
     private void Start()
     {
         //Assign Input Sources to Variables
         _keyboard = Keyboard.current;
         _gamepad = Gamepad.current;
+        isPlaying = true;
     }
 
     private void Update()
@@ -43,19 +46,27 @@ public class InputManager : MonoBehaviour
 
     private void UpdateKeyboardInput()
     {
-        // Set the value of moveDirection to be equal to the value of wasd
-        moveDirection.x = (_keyboard.dKey.isPressed ? 1 : 0) + (_keyboard.aKey.isPressed ? -1 : 0);
-        moveDirection.y = (_keyboard.wKey.isPressed ? 1 : 0) + (_keyboard.sKey.isPressed ? -1 : 0);
-        // Set the interact bools when the f key is interacted with
-        interactPressed = _keyboard.fKey.wasPressedThisFrame;
-        interactReleased = _keyboard.fKey.wasReleasedThisFrame;
-        interactHeld = _keyboard.fKey.isPressed;
-        // Set enter to give answer
-        enterHeld = _keyboard.enterKey.isPressed;
-        //escape for leaving dialogue and pause menu
-        escPressed = _keyboard.escapeKey.wasPressedThisFrame;
-        // e to attack
-        attackPressed = _keyboard.eKey.wasPressedThisFrame;
+        if (isPlaying == true)
+        {
+            // Set the value of moveDirection to be equal to the value of wasd
+            moveDirection.x = (_keyboard.dKey.isPressed ? 1 : 0) + (_keyboard.aKey.isPressed ? -1 : 0);
+            moveDirection.y = (_keyboard.wKey.isPressed ? 1 : 0) + (_keyboard.sKey.isPressed ? -1 : 0);
+            // Set the interact bools when the f key is interacted with
+            interactPressed = _keyboard.fKey.wasPressedThisFrame;
+            interactReleased = _keyboard.fKey.wasReleasedThisFrame;
+            interactHeld = _keyboard.fKey.isPressed;
+            // Set enter to give answer
+            enterHeld = _keyboard.enterKey.isPressed;
+            //escape for leaving dialogue and pause menu
+            escPressed = _keyboard.escapeKey.wasPressedThisFrame;
+            // e to attack
+            attackPressed = _keyboard.eKey.wasPressedThisFrame;
+        }
+        else
+        {
+            escPressed = _keyboard.escapeKey.wasPressedThisFrame;
+            enterHeld = _keyboard.enterKey.isPressed;
+        }
     }
 
     private void UpdateGamepadInput()
