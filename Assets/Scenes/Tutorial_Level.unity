@@ -873,6 +873,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 771356909727800537, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
+      propertyPath: tutorialKey
+      value: 
+      objectReference: {fileID: 1529215970}
+    - target: {fileID: 771356909727800537, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
       propertyPath: playerHealed
       value: 
       objectReference: {fileID: 8300000, guid: 83533d0fa56217e49b26e4241377c069, type: 3}
@@ -1213,6 +1217,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4c9913ee5396cb4cb72c19646e00162, type: 3}
+--- !u!1 &1529215970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6462420092545913438, guid: a4c9913ee5396cb4cb72c19646e00162, type: 3}
+  m_PrefabInstance: {fileID: 1529215969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1821432572
 GameObject:
   m_ObjectHideFlags: 0
