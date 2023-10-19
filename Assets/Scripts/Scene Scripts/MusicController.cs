@@ -14,13 +14,13 @@ public class MusicController : MonoBehaviour
         _audio = GetComponent<AudioSource>();
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (SceneManager.GetActiveScene().name == "Controls")
         {
             PlayMusic();
         }
-    }
+    }*/
 
     public void PlayMusic()
     {

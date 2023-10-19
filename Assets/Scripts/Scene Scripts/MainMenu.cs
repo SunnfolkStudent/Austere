@@ -13,12 +13,14 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        //GameObject.FindGameObjectWithTag("Music").GetComponent<MusicController>().StopMusic();
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Intro_Scene");
     }
 
     public void Settings()
     {
+        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicController>().PlayMusic();
         SceneManager.LoadScene("Controls");
     }
 
