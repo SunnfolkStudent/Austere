@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Awake()
+    {
+        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicController>().PlayMusic();
+    }
+
     public void PlayGame()
     {
         PlayerPrefs.DeleteAll();
