@@ -9,6 +9,7 @@ TagManager:
   - Exit
   - Key
   - AttackCircle
+  - Music
   layers:
   - Default
   - TransparentFX
