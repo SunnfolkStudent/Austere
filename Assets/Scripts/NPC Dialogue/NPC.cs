@@ -19,6 +19,9 @@ public class NPC : MonoBehaviour
    private float canTakeDamageTime = 0.02f;
    private float canTakeDamageCounter;
 
+   public bool attackable;
+   public GameObject emptyBox;
+
    private InputManager _input;
    private AudioSource _as;
 
@@ -36,6 +39,15 @@ public class NPC : MonoBehaviour
       {
          canTakeDamage = true;
       }
+
+      if (emptyBox.gameObject.active)
+      {
+         attackable = false;
+      }
+      else
+      {
+         attackable = true;
+      }
    }
 
    private void OnTriggerStay2D(Collider2D other)
@@ -49,7 +61,7 @@ public class NPC : MonoBehaviour
 
    private void OnTriggerEnter2D(Collider2D other)
    {
-      if (other.CompareTag("AttackCircle") && canTakeDamage)
+      if (other.CompareTag("AttackCircle") && canTakeDamage && attackable)
       {
          TakeDamage();
          canTakeDamage = false;

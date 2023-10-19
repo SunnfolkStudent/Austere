@@ -14,14 +14,18 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     
     private Queue<string> sentences;
+
+    public GameObject emptyBox;
     
     void Start()
     {
         sentences = new Queue<string>();
+        emptyBox.gameObject.SetActive(false);
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        emptyBox.gameObject.SetActive(true);
         animator.SetBool("IsOpen", true);
         PlayerControlsDisabled = true;
 
@@ -64,6 +68,7 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         PlayerControlsDisabled = false;
+        emptyBox.gameObject.SetActive(false);
     }
 
 }
