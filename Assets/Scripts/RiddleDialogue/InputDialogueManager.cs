@@ -97,7 +97,6 @@ public class InputDialogueManager : MonoBehaviour
             _System.SetSelectedGameObject(null);
         }
         
-        print("hey you cant type here");
         playerControlsDisabled = false;
     }
 

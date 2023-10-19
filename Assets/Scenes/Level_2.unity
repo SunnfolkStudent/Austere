@@ -1697,6 +1697,7 @@ MonoBehaviour:
   key: {fileID: 954105636}
   keyDrop: {fileID: 8300000, guid: 08919d597b10c97429b315a811b6be75, type: 3}
   animator: {fileID: 496672289}
+  _System: {fileID: 1825324309}
 --- !u!114 &718370360
 MonoBehaviour:
   m_ObjectHideFlags: 0
