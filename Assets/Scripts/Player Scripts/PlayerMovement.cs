@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class PlayerMovement : MonoBehaviour
         _input = GetComponent<InputManager>();
         _anim = GetComponent<Animator>();
         _phm = GetComponent<PlayerHealthManager>();
+        if (SceneManager.GetActiveScene().name == "BossRoom")
+        {
+            moveSpeed = 1f;
+        }
     }
 
     private void Update()
