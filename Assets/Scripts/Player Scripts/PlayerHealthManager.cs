@@ -35,10 +35,18 @@ public class PlayerHealthManager : MonoBehaviour
     private void Start()
     {
         isDown = false;
-        lives = PlayerPrefs.GetInt("Lives");
         _playerMovement = GetComponent<PlayerMovement>();
         _playerAttack = GetComponent<PlayerAttack>();
         _as = GetComponent<AudioSource>();
+        
+        if (SceneManager.GetActiveScene().name == "Tutorial_Level")
+        {
+            lives = 0;
+        }
+        else
+        {
+            lives = PlayerPrefs.GetInt("Lives");
+        }
 
         if (lives == 0)
         {
@@ -47,11 +55,6 @@ public class PlayerHealthManager : MonoBehaviour
         else
         {
             Up();
-        }
-        
-        if (SceneManager.GetActiveScene().name == "Tutorial_Level")
-        {
-            lives = 0;
         }
     }
 
