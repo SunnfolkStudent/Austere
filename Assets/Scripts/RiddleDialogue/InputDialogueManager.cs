@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class InputDialogueManager : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class InputDialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private InputManager _inputManager;
     private AudioSource _audio;
+
+    public EventSystem _System;
         
     void Start()
     {
@@ -48,8 +51,8 @@ public class InputDialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        textInput = null;
         animator.SetBool("IsOpen", true);
-        inputField.SetActive(true);
         playerControlsDisabled = true;
 
         nameText.text = dialogue.name;
@@ -88,7 +91,13 @@ public class InputDialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-        inputField.SetActive(false);
+        textInput = null;
+        if (_System.currentSelectedGameObject != null)
+        {
+            _System.SetSelectedGameObject(null);
+        }
+        
+        print("hey you cant type here");
         playerControlsDisabled = false;
     }
 
