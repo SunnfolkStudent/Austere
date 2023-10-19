@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour
     private float canTakeDamageTime = 1f;
     private float canTakeDamageCounter;
 
-    private Color original;
+    //private Color original;
 
     private float distance;
     private Animator _anim;
@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour
         _sr = GetComponent<SpriteRenderer>();
         _as = GetComponent<AudioSource>();
         key.gameObject.SetActive(false);
-        original = _sr.color;
+        //original = Color.white;
     }
 
     private void Update()
@@ -109,7 +109,7 @@ public class EnemyController : MonoBehaviour
     IEnumerator hurtFlash()
     {
         _sr.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
-        _sr.color = original;
+        yield return new WaitForSeconds(0.1f);
+        _sr.color = Color.white;
     }
 }

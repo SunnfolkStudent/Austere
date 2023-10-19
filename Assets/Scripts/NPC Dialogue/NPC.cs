@@ -18,19 +18,24 @@ public class NPC : MonoBehaviour
    private bool canTakeDamage;
    private float canTakeDamageTime = 0.02f;
    private float canTakeDamageCounter;
+   
+   //private Color original;
 
    public bool attackable;
    public GameObject emptyBox;
 
    private InputManager _input;
    private AudioSource _as;
+   private SpriteRenderer _sr;
 
    private void Start()
    {
       _input = GetComponent<InputManager>();
       _as = GetComponent<AudioSource>();
+      _sr = GetComponent<SpriteRenderer>();
       currentHealth = maxHealth;
       key.gameObject.SetActive(false);
+      //original = _sr.color;
    }
 
    private void Update()
@@ -76,6 +81,7 @@ public class NPC : MonoBehaviour
 
    public void TakeDamage()
    {
+      StartCoroutine(hurtFlash());
       currentHealth -= 1;
       _as.PlayOneShot(ghostHurt);
 
@@ -93,5 +99,12 @@ public class NPC : MonoBehaviour
    {
       KarmaManager.instance.AddBigKarma();
       Destroy(gameObject);
+   }
+   
+   IEnumerator hurtFlash()
+   {
+      _sr.color = Color.red;
+      yield return new WaitForSeconds(0.1f);
+      _sr.color = new Color(1, 1, 1, 1);
    }
 }
