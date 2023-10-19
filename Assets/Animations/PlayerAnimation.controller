@@ -196,7 +196,7 @@ BlendTree:
     m_DirectBlendParameter: X
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1c1a671bacbc26d45b2dd665136a5d93, type: 2}
+    m_Motion: {fileID: 7400000, guid: b4dc51814d0a44b4fb7c97d5f3e06bb2, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -204,7 +204,7 @@ BlendTree:
     m_DirectBlendParameter: X
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b4dc51814d0a44b4fb7c97d5f3e06bb2, type: 2}
+    m_Motion: {fileID: 7400000, guid: 1c1a671bacbc26d45b2dd665136a5d93, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -218,32 +218,6 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 1
---- !u!1102 &-2405802509470904424
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Player_DownWalk
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 8254548716222322600, guid: b7b4f4f731ee1164cbecc31cf93a9cc8, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &-2102977221682984867
 AnimatorState:
   serializedVersion: 6
@@ -265,32 +239,6 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 1753199975696950868}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-353935193091351378
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Player_UpWalk
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: -2296454517881631985, guid: 1dc32e913a922b549a3b996d07a97a42, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -489,15 +437,6 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 7281640422274198617}
-    m_Position: {x: 310, y: -50, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -353935193091351378}
-    m_Position: {x: 460, y: 30, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -2405802509470904424}
-    m_Position: {x: 480, y: 130, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: 1029970066713617549}
     m_Position: {x: 240, y: 110, z: 0}
   - serializedVersion: 1
@@ -505,16 +444,16 @@ AnimatorStateMachine:
     m_Position: {x: 30, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2102977221682984867}
-    m_Position: {x: 180, y: 20, z: 0}
+    m_Position: {x: 470, y: 50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8751149045339890667}
-    m_Position: {x: 460, y: 220, z: 0}
+    m_Position: {x: 460, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 30047326952571719}
-    m_Position: {x: 710, y: 70, z: 0}
+    m_Position: {x: 710, y: 50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7833251485355320557}
-    m_Position: {x: 700, y: 160, z: 0}
+    m_Position: {x: 710, y: 150, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -7563270645313876271}
@@ -526,29 +465,3 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 260, y: 370, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1029970066713617549}
---- !u!1102 &7281640422274198617
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Player_SideWalk
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 1428202729283715187, guid: 92307a11251a5c9439514e35d3b349a4, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
