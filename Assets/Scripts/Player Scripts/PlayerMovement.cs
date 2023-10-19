@@ -57,10 +57,12 @@ public class PlayerMovement : MonoBehaviour
                     _anim.Play("Player_Walk");
                     _anim.SetFloat("X", _input.moveDirection.x);
                     _anim.SetFloat("Y", _input.moveDirection.y);
+                    _anim.SetFloat("LastMoveX", _input.moveDirection.x);
+                    _anim.SetFloat("LastMoveY", _input.moveDirection.y);
                 }
                 else
                 {
-                    _anim.Play("Player_Idle"); 
+                    _anim.Play("Player_Idle_Alive"); 
                 }
             
                 // direction = animation
@@ -91,10 +93,12 @@ public class PlayerMovement : MonoBehaviour
                     _anim.Play("Player_Crawl");
                     _anim.SetFloat("X", _input.moveDirection.x);
                     _anim.SetFloat("Y", _input.moveDirection.y);
+                    _anim.SetFloat("LastMoveX", _input.moveDirection.x);
+                    _anim.SetFloat("LastMoveY", _input.moveDirection.y);
                 }
                 else
                 {
-                    _anim.Play("Player_Crawl_Idle"); 
+                    _anim.Play("Player_Idle_Dead"); 
                 }
             
                 // direction = animation
