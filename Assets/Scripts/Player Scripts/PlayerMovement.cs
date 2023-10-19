@@ -133,11 +133,11 @@ public class PlayerMovement : MonoBehaviour
             
             if(_phm.isDown == true)
             {
-                _anim.Play("Player_Crawl_Idle");
+                _anim.Play("Player_Idle_Dead");
             }
             else
             {
-                _anim.Play("Player_Idle");
+                _anim.Play("Player_Idle_Alive");
             }
         }
     }
