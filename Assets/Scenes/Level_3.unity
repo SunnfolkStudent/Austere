@@ -190,6 +190,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 553558312}
     - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
+      propertyPath: emptyBox
+      value: 
+      objectReference: {fileID: 848677037}
+    - target: {fileID: 8586727522625180344, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: ghostHurt
       value: 
       objectReference: {fileID: 8300000, guid: f56c1698bafb9814ab90ac0b7ec6d73b, type: 3}
@@ -675,6 +679,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3316714657351821304, guid: 81eaf87818c017249a75358a01566eda, type: 3}
   m_PrefabInstance: {fileID: 826567956}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &848677037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848677038}
+  m_Layer: 0
+  m_Name: emptyBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &848677038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848677037}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.3884883, y: -2.1255267, z: -0.50547314}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &906281415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4356931913774173108, guid: 25cce118a67ff324098500f0e1bb648a, type: 3}
@@ -1198,6 +1233,7 @@ MonoBehaviour:
   nameText: {fileID: 1709815063}
   dialogueText: {fileID: 553558312}
   animator: {fileID: 91373817}
+  emptyBox: {fileID: 848677037}
 --- !u!1001 &1240108586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2475,3 +2511,4 @@ SceneRoots:
   - {fileID: 509222403}
   - {fileID: 638303021}
   - {fileID: 1471742939}
+  - {fileID: 848677038}

@@ -120,6 +120,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &11786647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11786648}
+  m_Layer: 0
+  m_Name: emptyBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &11786648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11786647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3960338, y: -1.3491709, z: -0.533489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &118807953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +1303,7 @@ MonoBehaviour:
   nameText: {fileID: 1876303297}
   dialogueText: {fileID: 1585222460}
   animator: {fileID: 511952870}
+  emptyBox: {fileID: 11786647}
 --- !u!1001 &551373574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3823,6 +3855,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3813046104610737495, guid: 7ef0f75a2008b924fb00798ebec02355, type: 3}
+      propertyPath: emptyBox
+      value: 
+      objectReference: {fileID: 11786647}
+    - target: {fileID: 3813046104610737495, guid: 7ef0f75a2008b924fb00798ebec02355, type: 3}
       propertyPath: ghostHurt
       value: 
       objectReference: {fileID: 8300000, guid: f56c1698bafb9814ab90ac0b7ec6d73b, type: 3}
@@ -4067,6 +4103,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 139836292963704812, guid: b8b24bd1955f1f642a4d4f832e1a9fc4, type: 3}
+      propertyPath: emptyBox
+      value: 
+      objectReference: {fileID: 11786647}
     - target: {fileID: 139836292963704812, guid: b8b24bd1955f1f642a4d4f832e1a9fc4, type: 3}
       propertyPath: ghostHurt
       value: 
@@ -4455,3 +4495,4 @@ SceneRoots:
   - {fileID: 319224808}
   - {fileID: 8742674674831244852}
   - {fileID: 1731126505}
+  - {fileID: 11786648}
