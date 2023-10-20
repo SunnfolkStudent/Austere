@@ -6,10 +6,6 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public Animator animator;
-    public LayerMask enemyLayers;
-    
-    public bool canAttack;
-    public bool isAttacking;
     
     public GameObject attackCircle;
     
@@ -18,15 +14,13 @@ public class PlayerAttack : MonoBehaviour
     private void Start()
     {
         _input = GetComponent<InputManager>();
-        canAttack = true;
-        isAttacking = false;
         attackCircle.gameObject.SetActive(false);
     }
 
     void Update()
     {
         
-        if (_input.attackPressed && canAttack == true)
+        if (_input.attackPressed)
         {
             Attack();
         }
@@ -34,10 +28,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        isAttacking = true;
         StartCoroutine(EnableAndDisable());
-        //play attack animation
-        //animator.SetTrigger("Attack")
+        animator.SetTrigger("Attack");
 
     }
 
@@ -46,7 +38,6 @@ public class PlayerAttack : MonoBehaviour
         attackCircle.gameObject.SetActive(true);
         
         yield return new WaitForSeconds(0.05f);
-        this.attackCircle.gameObject.SetActive(false);
-        isAttacking = false;
+        attackCircle.gameObject.SetActive(false);
     }
 }
