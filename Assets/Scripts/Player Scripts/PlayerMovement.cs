@@ -29,6 +29,12 @@ public class PlayerMovement : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "BossRoom")
         {
             moveSpeed = 1f;
+            _anim.SetFloat("LastMoveY", 1);
+        }
+        else
+        {
+            _anim.SetFloat("LastMoveY", -1);
+            moveSpeed = 2f;
         }
     }
 
