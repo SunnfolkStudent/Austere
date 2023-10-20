@@ -23,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        if (InputDialogueManager.playerControlsDisabled == false || DialogueManager.PlayerControlsDisabled == false ||
+        /*if (InputDialogueManager.playerControlsDisabled == false || DialogueManager.PlayerControlsDisabled == false ||
             BossDialogueManager.PlayerControlsDisabled == false)
         {
             canAttack = true;
@@ -31,7 +31,7 @@ public class PlayerAttack : MonoBehaviour
         else
         {
             canAttack = false;
-        }
+        }*/
 
         if (_input.attackPressed && canAttack)
         {
