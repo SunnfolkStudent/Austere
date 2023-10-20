@@ -23,16 +23,6 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        /*if (InputDialogueManager.playerControlsDisabled == false || DialogueManager.PlayerControlsDisabled == false ||
-            BossDialogueManager.PlayerControlsDisabled == false)
-        {
-            canAttack = true;
-        }
-        else
-        {
-            canAttack = false;
-        }*/
-
         if (_input.attackPressed && canAttack)
         {
             Attack();
