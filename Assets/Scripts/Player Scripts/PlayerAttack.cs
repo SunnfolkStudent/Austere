@@ -12,6 +12,8 @@ public class PlayerAttack : MonoBehaviour
     private InputManager _input;
     private Animator _animator;
 
+    public float attackTimeCounter;
+
     private void Start()
     {
         _input = GetComponent<InputManager>();
@@ -32,7 +34,9 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         StartCoroutine(EnableAndDisable());
-        _animator.SetTrigger("Attack");
+        //_animator.SetTrigger("Attack");
+        _animator.Play("Attack");
+        attackTimeCounter = Time.time + 0.48f;
 
     }
 

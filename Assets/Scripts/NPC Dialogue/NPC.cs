@@ -34,8 +34,10 @@ public class NPC : MonoBehaviour
       _as = GetComponent<AudioSource>();
       _sr = GetComponent<SpriteRenderer>();
       currentHealth = maxHealth;
-      key.gameObject.SetActive(false);
       //original = _sr.color;
+      if (key==null) return;
+      key.gameObject.SetActive(false);
+      
    }
 
    private void Update()
@@ -45,6 +47,7 @@ public class NPC : MonoBehaviour
          canTakeDamage = true;
       }
 
+      if (emptyBox == null) return;
       if (emptyBox.gameObject.active)
       {
          attackable = false;

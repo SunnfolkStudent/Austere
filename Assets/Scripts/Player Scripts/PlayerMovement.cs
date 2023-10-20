@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private InputManager _input;
     private Animator _anim;
     private PlayerHealthManager _phm;
+    private PlayerAttack _attack;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         _input = GetComponent<InputManager>();
         _anim = GetComponent<Animator>();
         _phm = GetComponent<PlayerHealthManager>();
+        _attack = GetComponent<PlayerAttack>();
         if (SceneManager.GetActiveScene().name == "BossRoom")
         {
             moveSpeed = 1f;
@@ -43,6 +45,13 @@ public class PlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
+        if (_attack.attackTimeCounter > Time.time)
+        {
+            _rigidbody2D.velocity = Vector2.zero;
+            return;
+        }
+            
+        
         if (InputDialogueManager.playerControlsDisabled == false || DialogueManager.PlayerControlsDisabled == false)
         {
             if (_input.moveDirection.magnitude > 1)
