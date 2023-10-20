@@ -7,6 +7,8 @@ public class PlayerAttack : MonoBehaviour
 {
     public Animator animator;
     
+    public bool canAttack;
+    
     public GameObject attackCircle;
     
     private InputManager _input;
@@ -14,6 +16,7 @@ public class PlayerAttack : MonoBehaviour
     private void Start()
     {
         _input = GetComponent<InputManager>();
+        canAttack = true;
         attackCircle.gameObject.SetActive(false);
     }
 

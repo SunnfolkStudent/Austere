@@ -34,6 +34,11 @@ public class InputDialogueManager : MonoBehaviour
         _inputManager = GetComponent<InputManager>();
         _audio = GetComponent<AudioSource>();
         key.gameObject.SetActive(false);
+        
+        if (_System.currentSelectedGameObject != null)
+        {
+            _System.SetSelectedGameObject(null);
+        }
     }
 
     private void Update()
