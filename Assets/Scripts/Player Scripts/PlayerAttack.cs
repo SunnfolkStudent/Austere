@@ -5,18 +5,17 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public Animator animator;
-    
     public bool canAttack;
     
     public GameObject attackCircle;
     
     private InputManager _input;
+    private Animator _animator;
 
     private void Start()
     {
         _input = GetComponent<InputManager>();
-        animator = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
         canAttack = true;
         attackCircle.gameObject.SetActive(false);
     }
@@ -28,14 +27,12 @@ public class PlayerAttack : MonoBehaviour
         {
             Attack();
         }
-        animator.SetFloat("LastMoveX", _input.moveDirection.x);
-        animator.SetFloat("LastMoveY", _input.moveDirection.y);
     }
 
     private void Attack()
     {
         StartCoroutine(EnableAndDisable());
-        animator.SetTrigger("Attack");
+        _animator.SetTrigger("Attack");
 
     }
 
