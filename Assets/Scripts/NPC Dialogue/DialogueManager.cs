@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        if (emptyBox == null) return;
         emptyBox.gameObject.SetActive(false);
     }
 

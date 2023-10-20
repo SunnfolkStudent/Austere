@@ -33,6 +33,7 @@ public class InputDialogueManager : MonoBehaviour
         sentences = new Queue<string>();
         _inputManager = GetComponent<InputManager>();
         _audio = GetComponent<AudioSource>();
+        if (key == null) return;
         key.gameObject.SetActive(false);
         
         if (_System.currentSelectedGameObject != null)
