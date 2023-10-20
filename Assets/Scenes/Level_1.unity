@@ -1371,6 +1371,10 @@ PrefabInstance:
       value: Wandering Spirit
       objectReference: {fileID: 0}
     - target: {fileID: 7048196722868678134, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
+      propertyPath: _System
+      value: 
+      objectReference: {fileID: 887824207}
+    - target: {fileID: 7048196722868678134, guid: 0c8ad75c390b94d4d81e3a6e0778702b, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1114724057}

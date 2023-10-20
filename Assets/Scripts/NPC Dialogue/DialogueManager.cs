@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
 
     public GameObject emptyBox;
+    
+    public EventSystem _System;
     
     void Start()
     {
@@ -69,6 +72,10 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", false);
         PlayerControlsDisabled = false;
         emptyBox.gameObject.SetActive(false);
+        if (_System.currentSelectedGameObject != null)
+        {
+            _System.SetSelectedGameObject(null);
+        }
     }
 
 }

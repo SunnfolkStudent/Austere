@@ -18,14 +18,22 @@ public class PlayerAttack : MonoBehaviour
     {
         _input = GetComponent<InputManager>();
         _animator = GetComponent<Animator>();
-        canAttack = true;
         attackCircle.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        
-        if (_input.attackPressed)
+        if (InputDialogueManager.playerControlsDisabled == false || DialogueManager.PlayerControlsDisabled == false ||
+            BossDialogueManager.PlayerControlsDisabled == false)
+        {
+            canAttack = true;
+        }
+        else
+        {
+            canAttack = false;
+        }
+
+        if (_input.attackPressed && canAttack)
         {
             Attack();
         }

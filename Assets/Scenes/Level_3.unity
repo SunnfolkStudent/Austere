@@ -1234,6 +1234,7 @@ MonoBehaviour:
   dialogueText: {fileID: 553558312}
   animator: {fileID: 91373817}
   emptyBox: {fileID: 848677037}
+  _System: {fileID: 5317399923613245188}
 --- !u!1001 &1240108586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1354,7 +1355,7 @@ MonoBehaviour:
   dialogue:
     name: Riddle Mirror
     sentences:
-    - 'People make me, save me, change me and raise me. What am I?
+    - 'People make me, save me, borrow me and raise me. What am I?
 
 '
 --- !u!61 &1392028509

@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         }
             
         
-        if (InputDialogueManager.playerControlsDisabled == false || DialogueManager.PlayerControlsDisabled == false)
+        if (InputDialogueManager.playerControlsDisabled == false || DialogueManager.PlayerControlsDisabled == false || BossDialogueManager.PlayerControlsDisabled == false)
         {
             if (_input.moveDirection.magnitude > 1)
             {

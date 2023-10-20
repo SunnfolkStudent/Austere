@@ -281,6 +281,7 @@ MonoBehaviour:
   dialogueText: {fileID: 394311658}
   animator: {fileID: 394311656}
   emptyBox: {fileID: 1173501865}
+  _System: {fileID: 1241864801}
 --- !u!1001 &408272208
 PrefabInstance:
   m_ObjectHideFlags: 0
