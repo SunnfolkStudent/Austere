@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             _anim.SetFloat("LastMoveY", -1);
-            moveSpeed = 2f;
         }
     }
 
