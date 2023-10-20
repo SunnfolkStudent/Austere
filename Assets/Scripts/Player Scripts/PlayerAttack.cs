@@ -16,6 +16,7 @@ public class PlayerAttack : MonoBehaviour
     private void Start()
     {
         _input = GetComponent<InputManager>();
+        animator = GetComponent<Animator>();
         canAttack = true;
         attackCircle.gameObject.SetActive(false);
     }
@@ -27,6 +28,8 @@ public class PlayerAttack : MonoBehaviour
         {
             Attack();
         }
+        animator.SetFloat("LastMoveX", _input.moveDirection.x);
+        animator.SetFloat("LastMoveY", _input.moveDirection.y);
     }
 
     private void Attack()
