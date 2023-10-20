@@ -76,6 +76,7 @@ public class PlayerHealthManager : MonoBehaviour
         {
             if (lives == 5)
             {
+                if (tutorialKey == null) return;
                 tutorialKey.gameObject.SetActive(true);
             }
         }
