@@ -36,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
         StartCoroutine(EnableAndDisable());
         //_animator.SetTrigger("Attack");
         _animator.Play("Attack");
-        attackTimeCounter = Time.time + 0.48f;
+        attackTimeCounter = Time.time + 0.2f;
 
     }
 
